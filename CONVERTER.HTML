@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Excel → Nested JSON (with CUSTOMER + Uppercase IMAGES)</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6f8; margin: 20px; color: #333; }
+    h1 { text-align: center; color: #007acc; }
+    input[type="file"] { display: block; margin: 20px auto; font-size: 16px; }
+    #copyBtn {
+      display: none;
+      background: #007acc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 15px;
+      cursor: pointer;
+      margin: 10px auto;
+      display: block;
+      transition: background 0.3s;
+    }
+    #copyBtn:hover { background: #005a99; }
+    pre {
+      background: #111; color: #0f0; padding: 15px; border-radius: 5px;
+      white-space: pre-wrap; word-wrap: break-word; font-size: 13px;
+      max-height: 80vh; overflow: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Excel → Nested JSON (SINO + CUSTOMER + Uppercase IMAGES)</h1>
+  <input type="file" id="input-excel" accept=".xls,.xlsx" />
+  <button id="copyBtn">📋 Copy JSON</button>
+  <pre id="jsonOutput"></pre>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+  <script>
+    const inputExcel = document.getElementById('input-excel');
+    const jsonOutput = document.getElementById('jsonOutput');
+    const copyBtn = document.getElementById('copyBtn');
+
+    inputExcel.addEventListener('change', function (e) {
+      const file = e.target.files[0];
+      jsonOutput.textContent = "";
+      copyBtn.style.display = "none";
+
+      if (!file) return alert("Please select an Excel file");
+
+      const reader = new FileReader();
+      reader.onload = function (evt) {
+        const data = new Uint8Array(evt.target.result);
+        const workbook = XLSX.read(data, { type: "array" });
+        const sheet = workbook.Sheets[workbook.SheetNames[0]];
+        const rows = XLSX.utils.sheet_to_json(sheet, { defval: "" });
+
+        const result = {};
+
+        rows.forEach(row => {
+          const SINO = row["SINO"];
+          if (!SINO) return;
+
+          // 🔹 Identify any column that includes "CUSTOMER" (case-insensitive)
+          const customerColumns = Object.keys(row).filter(k => k.trim().toUpperCase().includes("CUSTOMER"));
+          let customerValue = "";
+          if (customerColumns.length > 0) {
+            const lastCustomerKey = customerColumns[customerColumns.length - 1];
+            customerValue = (row[lastCustomerKey] || "").toString().trim().toUpperCase();
+          }
+
+          const empCode = (row["EMPLOYEE CODE"] || "").toString().trim();
+          const empName = row["EMPLOYEE NAME"] || "";
+          const dept = row["DEPARTMENT"] || "";
+          const shortRoles = row["SHORT ROLES"] || "";
+          const activities = row["ACTIIVITIES"] || "";
+          const roles = row["ROLES"] || "";
+
+          // 🔹 Create or update SINO group
+          if (!result[SINO]) {
+            result[SINO] = {
+              SINO: SINO,
+              EMPLOYEE_CODE: empCode,
+              EMPLOYEE_NAME: empName,
+              SHORT_ROLES: shortRoles,
+              DEPARTMENT: dept,
+              ACTIIVITIES: activities,
+              EMPLOYEE_IMAGE: empCode ? `./IMAGES/${empCode.toUpperCase()}.jpg` : "",
+              ROLES: roles,
+              CUSTOMER: customerValue, // ✅ Always added here
+              AUTHORITIES: [],
+              CHILDREN: []
+            };
+          } else {
+            if (customerValue && customerValue !== "")
+              result[SINO].CUSTOMER = customerValue; // update if found later
+          }
+
+          // 🔹 Add AUTHORITIES
+          if (row["AUTHORITIES"] && row["AUTHORITIES"].trim() !== "") {
+            result[SINO].AUTHORITIES.push(row["AUTHORITIES"].trim());
+          }
+
+          // 🔹 Add child details
+          const child = {
+            RESPONSIBILITIES: row["RESPONSIBILITIES"] || "",
+            "CO-ORDINATION": row["CO-ORDINATION"] || "",
+            REFERENCE: row["REFERENCE"] || "",
+            DOCUMENTS: row["DOCUMENTS"] || "",
+            "FREQUENCY/TARGET": row["FREQUENCY/TARGET"] || "",
+            "SECONDLINE PERSON": row["SECONDLINE PERSON"] || "",
+            "SALES ACTIVITIES CONTRIBUTION": row["SALES ACTIVITIES CONTRIBUTION"] || ""
+          };
+
+          // remove empty fields
+          for (const key in child) {
+            if (child[key] === "" || child[key].trim() === "") delete child[key];
+          }
+
+          if (Object.keys(child).length > 0) result[SINO].CHILDREN.push(child);
+        });
+
+        // 🔹 Clean empty fields
+        const cleanData = Object.values(result).map(emp => {
+          const cleaned = {};
+          for (const [key, value] of Object.entries(emp)) {
+            if (Array.isArray(value) && value.length === 0) continue;
+            if (typeof value === "string" && value.trim() === "") continue;
+            cleaned[key] = value;
+          }
+          return cleaned;
+        });
+
+        // ✅ Final JSON Output
+        const jsonString = JSON.stringify(cleanData, null, 2);
+        jsonOutput.textContent = jsonString;
+        copyBtn.style.display = "block";
+      };
+      reader.readAsArrayBuffer(file);
+    });
+
+    // 📋 Copy JSON button
+    copyBtn.addEventListener('click', () => {
+      const text = jsonOutput.textContent;
+      if (!text.trim()) return alert("No JSON data to copy!");
+      navigator.clipboard.writeText(text).then(() => {
+        copyBtn.textContent = "✅ Copied!";
+        setTimeout(() => (copyBtn.textContent = "📋 Copy JSON"), 1500);
+      });
+    });
+  </script>
+</body>
+</html>

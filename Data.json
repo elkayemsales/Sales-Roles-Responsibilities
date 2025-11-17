@@ -1,0 +1,4656 @@
+[
+  {
+    "SINO": 1,
+    "EMPLOYEE_CODE": "1003",
+    "EMPLOYEE_NAME": "R.PRABHAKARAN",
+    "SHORT_ROLES": "HOD [ AM ]",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "ALL",
+    "EMPLOYEE_IMAGE": "./IMAGES/1003.jpg",
+    "ROLES": "HEAD OF THE DEPARTMENT",
+    "CUSTOMER": "TVS / GEML / LEYLAND / TAFE / NEW CUSTOMER",
+    "AUTHORITIES": [
+      "To select, develop and nurture, the required team members and knit them into a cohesive, proactive team",
+      "Recommend for leave, permissions, increments, disciplinary actions for your team members",
+      "Plan and allotment of work and shift allotments to individual workers and staff.",
+      "Certify completion of training and suggestion of deployment after training",
+      "Plan and decide on deputing persons for carrying out work related to Company’s activities – to customers, suppliers and to our Mysore works"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Man power review.",
+        "CO-ORDINATION": "Personnel",
+        "REFERENCE": "Man Power Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Schedule vs.supply review.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Plan vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS / R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Customer Critical Material Follow Ups & Production Commitment Review with Production & Purchase Team.",
+        "CO-ORDINATION": "Production,    Purchase",
+        "REFERENCE": "Daily commitment sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS / R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Customer Wise Dispatch Plan Verify & Confirmation",
+        "CO-ORDINATION": "Production,    Purchase",
+        "REFERENCE": "Schedule",
+        "DOCUMENTS": "LKM/SLS/DI/19",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS / R.SIVAKUMAR /  R.NAGARAJ",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Customer Sch vs. Del Review & discuss to ED",
+        "CO-ORDINATION": "ED. ",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Clearances of Customer ODC. ",
+        "CO-ORDINATION": "Stores",
+        "REFERENCE": "ODC Analysis",
+        "DOCUMENTS": "LKM/SLS/DI/25 ",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS / R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Clearances of Customer Rejection & Compliance with in the Target Dates",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "Customer Rejection& Compliant File",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Accounting of Packing Materials & Containers. ",
+        "CO-ORDINATION": "Stores",
+        "REFERENCE": "Container & Packing Material Stock Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR /K.MANOJKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Releasing the monthly schedule to production & purchase.",
+        "CO-ORDINATION": "Production,    Purchase",
+        "REFERENCE": "Schedule",
+        "DOCUMENTS": "LKM/SLS/DI/19",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS / R.SIVAKUMAR /K.MANOJKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Analysis & Review with the Sch vs. Delivery on the Weekly Basics & Mail to Customer Wise and Amend the schedule release to production & purchase .",
+        "CO-ORDINATION": "Production,    Purchase",
+        "REFERENCE": "Schedule",
+        "DOCUMENTS": "LKM/SLS/DI/19",
+        "FREQUENCY/TARGET": "Weekly",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Review with sales & FG stores team on daily.",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Review of QMS Documents & Compliance.",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "QMS Documents",
+        "DOCUMENTS": "LKM/QM/01",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Review of Premium freight.",
+        "CO-ORDINATION": "Production,    Purchase",
+        "REFERENCE": "Premium freight Register",
+        "DOCUMENTS": "LKM/SLS/DI/27",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "NPD related (packing & dispatch) activities review & follow up.",
+        "CO-ORDINATION": "NPD",
+        "REFERENCE": "CFT",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR /K.MANOJKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Customer wise Ensure pending GRN & Payment.",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "GRN Format & Payment Pending",
+        "DOCUMENTS": "LKM/SLS/DI/12",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Customer wise the Ensure Billing as per the Current PO’s.",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "Purchase Order ",
+        "DOCUMENTS": "LKM/SLS/DI/50",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer wise Packing Cost & Details Follow Ups. ",
+        "CO-ORDINATION": "Costing",
+        "REFERENCE": "Packing Cost ",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer wise Supplementary Bills Follow Ups. ",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Customer wise Sales Target Achievement. ",
+        "CO-ORDINATION": "Production,    Purchase",
+        "REFERENCE": "Business plan",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS / R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Report to Respective HOD / ED regarding daily updation.",
+        "CO-ORDINATION": "ED ",
+        "REFERENCE": "Reminder sheet",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "*****",
+        "SECONDLINE PERSON": "*****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Co-Ordinate with mqms for internal audits and external audits",
+        "CO-ORDINATION": "MQMS",
+        "REFERENCE": "Audit Reports",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "*****",
+        "SECONDLINE PERSON": "*****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      }
+    ]
+  },
+  {
+    "SINO": 2,
+    "EMPLOYEE_CODE": "2217",
+    "EMPLOYEE_NAME": "R.NAGARAJ",
+    "SHORT_ROLES": "SR.EXE",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/2217.jpg",
+    "ROLES": "SR.EXECUTIVE",
+    "CUSTOMER": "GEML",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Trolley Opening  Stock taking all location (LKM U3/U1/U2) and empty trolley arrangement.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Greaves Child parts Opening Stock updation",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle Follow-up end to end from Hosur to (RPT- Mysore)",
+        "CO-ORDINATION": "Transport",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch activity monitoring",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Sch Vs. supply  analysis.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Sales Projection",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle Planning and tracking.",
+        "CO-ORDINATION": "Transport",
+        "REFERENCE": "*******",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Sales planning (Review of plan sheet).",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/05",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "ASN / MRP system follow up.",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Customer Website",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Production commitment follow-up.",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Daily commitment sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "GRN follow up ",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/12",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.SIVAKUMAR/ N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Clearance of customer complaint / Rejection",
+        "CO-ORDINATION": "QAD,  Finance",
+        "REFERENCE": "Customer Rejection& Compliant Document",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Accounting of container in register",
+        "CO-ORDINATION": "Store",
+        "REFERENCE": "Container Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle trip monitoring ( veh. type wise / plant wise )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Vehicle trip monitoring register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle turn around time monitoring ",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Manpower Followup(Op,Sr.op)",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Manpower Register",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Ensuring of current P.O & rate checking",
+        "CO-ORDINATION": "Store Team",
+        "REFERENCE": "Purchase order",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR / N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer Critical materials follow up.",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Mail",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR / N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Commitment materials  follow-up.",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Daily commitment sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "FIFO follow-up.",
+        "CO-ORDINATION": "FG Store",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle audit to be completed for new and regular vechicles on monthly basis.",
+        "CO-ORDINATION": "Transport",
+        "REFERENCE": "Vehicle audit Check list",
+        "DOCUMENTS": "LKM/SLS/DI/51",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "CL (Casual Labor) work reporting.",
+        "CO-ORDINATION": "Personal",
+        "REFERENCE": "Man Power Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Log book maintenance.",
+        "CO-ORDINATION": "FG Store",
+        "REFERENCE": "Log book Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU / S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Improvement  activities",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "LKM/PRD/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Report to Respective HOD regarding daily updation.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 3,
+    "EMPLOYEE_CODE": "1276",
+    "EMPLOYEE_NAME": "A.JANNATHUL FIRDHOUS",
+    "SHORT_ROLES": "SR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH AND DOCUMENTATION",
+    "EMPLOYEE_IMAGE": "./IMAGES/1276.jpg",
+    "ROLES": "SR.OFFICER",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "1S & 2S activities in Office.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Hard & Soft Copies of File Maintenance.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer Communication.",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Mail",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "M.BASKAR / N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Maintenance of QMS Documents & Implementation",
+        "CO-ORDINATION": "QMS",
+        "REFERENCE": "Master list of documents & records & change request.",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI / R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintenance of Premium freight.",
+        "CO-ORDINATION": "Production, Purchase,         Finance",
+        "REFERENCE": "Premium freight Register",
+        "DOCUMENTS": "LKM/SLS/DI/27",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Production and Purchase commitment follow-up",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Daily commitment sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "M.BASKAR / N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Critical materials follow up TVSM parts",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Daily commitment sheet",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "M.BASKAR / N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Below MSL Vs JITCALLfollow-ups ",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Daily commitment sheet",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "T.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Sch Vs. supply  analysis.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Sales Projection",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI / R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Co-ordination of Training activities.",
+        "CO-ORDINATION": "HRD",
+        "REFERENCE": "Training records",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.POOVIZHI / R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Sales projection Updation & Analysis.",
+        "CO-ORDINATION": "HOD& ED Sir",
+        "REFERENCE": "Sales Projection",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.POOVIZHI / R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Customer satisfaction survey report preparation",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Customer Satisfaction ",
+        "DOCUMENTS": "LKM/SLS/DI/29",
+        "FREQUENCY/TARGET": "Yearly once",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Delivery Rating & Sales Loss updation",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "sales report",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly ",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Presentation  analysis",
+        "CO-ORDINATION": "QMS",
+        "REFERENCE": "Presentation",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Monthly ",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Planning and schedule releasing.",
+        "CO-ORDINATION": "HOD& ED Sir",
+        "REFERENCE": "Schedule",
+        "DOCUMENTS": "LKM/SLS/DI/05",
+        "FREQUENCY/TARGET": "Monthly 3 times",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Sales order and rate contract updation in ERP",
+        "CO-ORDINATION": "ISD",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Monthly sales report preparation.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "sales report",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Budget Planning.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Budget",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Data analysis.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "N.POOVIZHI / R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Provide suggestions /feedback to improve excel automation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "N.POOVIZHI / R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "DPR Analysis",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "DPR Presentation",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "N.POOVIZHI / R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "DWM Meeting Presentation",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Presentation",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Preparation DWM Presentation",
+        "SECONDLINE PERSON": "M.DEEPA/N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Team Building",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "Training ",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 4,
+    "EMPLOYEE_CODE": "1562",
+    "EMPLOYEE_NAME": "T.SHANMUGAM",
+    "SHORT_ROLES": "OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "STORE",
+    "EMPLOYEE_IMAGE": "./IMAGES/1562.jpg",
+    "ROLES": "OFFICER",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Ensuring 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "FG stores inventory management. (maintaining minimum & maximum stock level)",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Daily FG inward and outward stock reporting.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Inward & Dispatch register, Plan Vs. Actual- receipt report",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Monitoring & ensuring the stock transfers in ERP.",
+        "CO-ORDINATION": "Production, Purchase, ISD",
+        "REFERENCE": "FGTN",
+        "DOCUMENTS": "LKM/SLS/DI/21",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material storage in proper location.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Stores dock audit.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Supervising and co-ordinating with store teams in daily activities.  (material movement, handling, maintaining stocks in dedicated areas)",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Guiding for material stocking in a minimum space and issuing by FIFO method.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Preparing the below MSL parts list & follow up. ",
+        "CO-ORDINATION": "Production, Purchase, Sales Team",
+        "REFERENCE": "Daily report of Below MSL ",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Ensuring preservation of materials.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Preservation check list",
+        "DOCUMENTS": "LKM/SLS/DI/07",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "To maintain correct inventory of the store, accordingly do the stock correction plan.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Perpetual Inventory Register",
+        "DOCUMENTS": "LKM/SLS/DI/14",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Ensuring the packing slip for all dispatching materials.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Packing slip",
+        "DOCUMENTS": "LKM/SLS/DI/24",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Responsible for safe material storage and handling with zero accidents.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Accident reports",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BASKAR/N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "To ensure the maintenance of all internal records of FG store.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Inventory maintenance & monitoring of stock taking of A,B,C,D class parts.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Perpetual Inventory Register",
+        "DOCUMENTS": "LKM/SLS/DI/14",
+        "FREQUENCY/TARGET": "Weekly",
+        "SECONDLINE PERSON": "T.RAVISHANKAR / T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Monitoring the weighing scale calibration frequency & maintaining records",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Weighing Scale Calibration Monitoring Check Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/26",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "People Development / Team Management, (Organizing the training for staff, as well as monitoring staff performance & progress.)",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Training records",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Manage store staff issues & efficient utilization of manpower.",
+        "CO-ORDINATION": "Personal, Sales Team",
+        "REFERENCE": "Manpower register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Container & Trolley Condition monitoring and Raising Scrap Report 2 month Once",
+        "CO-ORDINATION": "Personal, Sales Team",
+        "REFERENCE": "Non moving ",
+        "DOCUMENTS": "Non Moving part Handling",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "K.MANOJKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "To continually update, guide & train all team members in store functions.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Training records",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "ODC Clearance",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "FG. Store",
+        "DOCUMENTS": "LKM/SLS/DI/25",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BASKAR / N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "FG store  & departmental Improvement activities. (CIP)",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "LKM/PRD/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintenance of QMS Documents & Compliance.",
+        "CO-ORDINATION": "Sales Team, QMS",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 5,
+    "EMPLOYEE_CODE": "1664",
+    "EMPLOYEE_NAME": "R.SIVAKUMAR",
+    "SHORT_ROLES": "SR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/1664.jpg",
+    "ROLES": "SR.OFFICER",
+    "CUSTOMER": "GEML",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "1S & 2S activities in Stores.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Greaves Plan vs Actual & Stock verification",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.NAGARAJ",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Daily vehicle planning to RPT and Lkm Mysore",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.NAGARAJ",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Greaves Part Commitment Followup",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.NAGARAJ /K.MANOJKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "LKM Mysore material follow up",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Manpower manage and utilizes the efficiently.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Critical materials follow up LKM Mysore & Greaves parts",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle Trip Monitoring",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BASKAR/N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Sch Vs Supply data collection for analysis.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Plan vs Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Trip sheet Proceed",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch register",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle Audit & Follow up",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Customer Satisfaction ",
+        "DOCUMENTS": "LKM/SLS/DI/51",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "M.BASKAR / N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "ODC Clearance",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "FG. Store",
+        "DOCUMENTS": "LKM/SLS/DI/25",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Team building & Kaizen",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QAD/DI/130",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "New container manufacturing follow up and Accounting of new container and update in Master list.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "K.MANOJKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Order updation in ERP",
+        "CO-ORDINATION": "ISD",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/08",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material handling Equipment's follow ups and monitoring",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Team",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "NPD Follow-up",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Team",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "K.MANOJKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Improvement Activities",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Team",
+        "DOCUMENTS": "LKM/PRD/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Below MSL follow-ups FG store storage improvement plan ",
+        "CO-ORDINATION": "Customer, Team & HOD",
+        "REFERENCE": "MSL",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "CIP / Suggestion to improvement DPR",
+        "CO-ORDINATION": "Team,HOD",
+        "REFERENCE": "CIP file",
+        "DOCUMENTS": "LKM/QMS/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 6,
+    "EMPLOYEE_CODE": "1477",
+    "EMPLOYEE_NAME": "M.BALAJI",
+    "SHORT_ROLES": "OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/1477.jpg",
+    "ROLES": "OFFICER",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Dispatch and Kit Packing manpower allotment and utilizes it efficiently.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Plan vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch activity monitoring as per day wise customer requirement.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Sch vs.Supply Review and analysis.",
+        "CO-ORDINATION": "HOD's & Customer",
+        "REFERENCE": "Plan vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Review of Container opening stock and arrange to users.",
+        "CO-ORDINATION": "All Location",
+        "REFERENCE": "Container Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/\r\nR.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Production and Purchase commitment follow-up",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Daily commitment sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch and KIT Packing Dock Audit",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "Check list ",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU /\r\nR.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Clearance of customer complaint / Rejection",
+        "CO-ORDINATION": "QAD,Finance",
+        "REFERENCE": "Customer Rejection& Compliant Document",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Accounting of container register.",
+        "CO-ORDINATION": "FG. Store",
+        "REFERENCE": "Container Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MADHESHWARAN/ O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintenances of material handling equipment's",
+        "CO-ORDINATION": "PMD",
+        "REFERENCE": "Trolley Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Critical materials follow up",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Daily commitment sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "ODC Clearance",
+        "CO-ORDINATION": "FG. Store",
+        "REFERENCE": "ODC Action Plan File",
+        "DOCUMENTS": "LKM/SLS/DI/25",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Packing material indent and follow up.",
+        "CO-ORDINATION": "ConsR.UMAMAGESHWARIble store",
+        "REFERENCE": "Indent Note",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "O.MUNIRAJU /R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Packing material receipt and accounting.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Packing Material Stock Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "O.MUNIRAJU /R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Log book maintenance.",
+        "CO-ORDINATION": "FG Store, Sales",
+        "REFERENCE": "Log book Register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "*****",
+        "SECONDLINE PERSON": "R.MARIMUTHU/R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Improvement activities.",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "CIP File",
+        "DOCUMENTS": "LKM/PRD/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "CL (Casual Labor) and Sub-ordinates work reporting and Review.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "*****",
+        "SECONDLINE PERSON": "*****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "*****",
+        "SECONDLINE PERSON": "*****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 7,
+    "EMPLOYEE_CODE": "1474",
+    "EMPLOYEE_NAME": "K.MANOJKUMAR",
+    "SHORT_ROLES": "OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/1474.jpg",
+    "ROLES": "OFFICER",
+    "CUSTOMER": "TAFE / LEYLAND",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Ensuring 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR/T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Critical Material Follow up",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.SIVAKUMAR /\r\nR.NAGARAJ",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Customer communication for planning & GRN Followup",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "GRN",
+        "DOCUMENTS": "LKM/SLS/DI/12",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Planning As Per Customer Requirements.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Tafe(FED) And AL Plan Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "NPD Followup",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "AL / TAFE(FED) Schedule preparation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "TAFE(FED) Schedule file",
+        "DOCUMENTS": "LKM/SLS/DI/05",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.SIVAKUMAR/R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "TAFE(FED) Non moving part follow-up",
+        "CO-ORDINATION": "Production ,\r\nPurchase",
+        "REFERENCE": "Non moving sheet",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "AL / TAFE(FED) / Troax Sales order updation",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/08",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "New parts packing standard preparation.",
+        "CO-ORDINATION": "***",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.POOVIZHI /M.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "AL & FED & Troax P.O follow up",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "New product packing activities.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection parts follow-up and collection.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Customer Rejection",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "K.RAMYASHREE",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "New Container manufacture follow-ups. ",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "New Trolley Design and Fabrication",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "New Packing material ConsR.UMAMAGESHWARIble Follow-ups",
+        "CO-ORDINATION": "Sales , Purchase",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "New Trolley Accounting & Mail to PMD",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Provide suggestions /feedback to improve store productivity",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "LKM/PRD/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 8,
+    "EMPLOYEE_CODE": "1475",
+    "EMPLOYEE_NAME": "M.BASKAR",
+    "SHORT_ROLES": "OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/1475.jpg",
+    "ROLES": "OFFICER",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Physical opening stock taking and empty Trolley / crates arrangement.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Stock Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.RAVISHANKAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch planning as per customer requirement. ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "JIT CALL / MRP / BAR Code Schedule Follow up.",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Customer Portal",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.RAVISHANKAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle Planning and tracking.",
+        "CO-ORDINATION": "Transport",
+        "REFERENCE": "*******",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch list updation in ERP, making invoice.",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/08",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Check list Preparation.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle loading as per sales check list in front of QA & driver. ",
+        "CO-ORDINATION": "QAD,Transport",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.RAVISHANKAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch vehicle Register maintenance",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow in 3R Activity. ( Right Qty & Quality& Location )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.RAVISHANKAR",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Daily Commitment Followup  sheet updation and maintenance.",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "Daily Commitment Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.RAVISHANKAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "LKM Mysore commitment follow up",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Daily Commitment Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.RAVISHANKAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection Material unloading verified the invoice and materials and handover the store in charge.",
+        "CO-ORDINATION": "QAD,\r\nFinance",
+        "REFERENCE": "Customer Rejection Register",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "As per Unit-III dispatch plan stock followup & arranging vehicle for dispatch",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.RAVISHANKAR",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Greaves Child part material followup and planning for dispatch",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "Customer Website",
+        "DOCUMENTS": "LKM/SLS/DI/05",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.RAVISHANKAR",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Empty container followup for RPT dispatch plan",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Provide suggestions /feedback to improve store productivity",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "LKM/QMS/DI/30",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 9,
+    "EMPLOYEE_CODE": "1727",
+    "EMPLOYEE_NAME": "N.SHANMUGAM",
+    "SHORT_ROLES": "OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/1727.jpg",
+    "ROLES": "OFFICER",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Physical opening stock taking and empty Trolley / crates arrangement.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Stock Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN /T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch planning as per customer requirement. ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "JIT CALL / MRP / BAR Code Schedule Follow up.",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Customer Portal",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle Planning and tracking.",
+        "CO-ORDINATION": "Transport",
+        "REFERENCE": "*******",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch list updation in ERP, making invoice.",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/08",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Check list Preparation.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch vehicle Register maintenance",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow in 3R Activity. ( Right Qty & Quality& Location )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Daily Commitment Followup  sheet updation and maintenance.",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "Daily Commitment Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "LKM Mysore commitment follow up",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Daily Commitment Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN /T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection Material unloading verified the invoice and materials and handover the store in charge.",
+        "CO-ORDINATION": "QAD,\r\nFinance",
+        "REFERENCE": "Customer Rejection Register",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.THAMOTHARAN /T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle loading as per sales check list in front of QA & driver. ",
+        "CO-ORDINATION": "QAD,Transport",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "As per Unit-III dispatch plan stock followup & arranging vehicle for dispatch",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Greaves Child part material followup and planning for dispatch",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "Customer Website",
+        "DOCUMENTS": "LKM/SLS/DI/05",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Empty container followup for RPT dispatch plan",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Provide suggestions /feedback to improve store productivity",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "LKM/QMS/DI/30",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 10,
+    "EMPLOYEE_CODE": "1960",
+    "EMPLOYEE_NAME": "R.MARIMUTHU",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH AND STORE",
+    "EMPLOYEE_IMAGE": "./IMAGES/1960.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Trolley opening stock taking and empty Trolley / crates arrangement.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Trolley opening stock Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Stores",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Checklist preparation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material Receipt as per the schedule from Production and document follow ups.",
+        "CO-ORDINATION": "Sales Team, Production",
+        "REFERENCE": "Plan Vs. Actual, RM & Production Inward register",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Packing Materials Opening stock Update the Register.  ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Packing Materials Stock Register",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Monitoring & ensuring the stock transfers in ERP.",
+        "CO-ORDINATION": "Production, Purchase, ISD",
+        "REFERENCE": "FGTN",
+        "DOCUMENTS": "LKM/SLS/DI/21",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Preparing the below MSL parts list & follow up. ",
+        "CO-ORDINATION": "Production,Sales Team",
+        "REFERENCE": "Daily report of Below MSL ",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch planning as per customers(TVSM,Quantum) requirement. ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection Material unloading, verified the invoice and materials handover the QAD in charge. Rejection invoice send to Unit-1",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "Rejection Register",
+        "DOCUMENTS": "LKM/SLS/DI/40",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Critical Material Follow-up",
+        "CO-ORDINATION": "Sales, Production, Purchase",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch vehicle Register maintenance",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch  Register ",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material storage in proper location with identification.",
+        "CO-ORDINATION": "Team Members",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle loading as per sales check list in front of QA & driver. ",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Empty unloading activities and updated the register.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintenance trolley escalating to PMD",
+        "CO-ORDINATION": "PMD",
+        "REFERENCE": "Trolley work Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Stock tacking for A,B&C class as per plan.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Perpetual inventory register",
+        "DOCUMENTS": "LKM/SLS/DI/14",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow in 3R Activity. ( Right Qty & Quality & Location )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "KIT Swing arm packing and dispatch",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "FGTN",
+        "DOCUMENTS": "LKM/SLS/DI/21",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Log Book maintenance.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Sales LOG Book",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Material stocking in a minimum space and issuing by FIFO method.",
+        "CO-ORDINATION": "Stores",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "CL (Casual Labour) work reporting.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "***",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 11,
+    "EMPLOYEE_CODE": "2077",
+    "EMPLOYEE_NAME": "R.MADHESHWARAN",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH AND STORE",
+    "EMPLOYEE_IMAGE": "./IMAGES/2077.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Trolley opening stock taking and empty Trolley / crates arrangement.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Trolley opening stock Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Stores",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Checklist preparation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material Receipt as per the schedule from  Production and document follow ups.",
+        "CO-ORDINATION": "Sales Team, Production",
+        "REFERENCE": "Plan Vs. Actual, RM & Production Inward register",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Packing Materials Opening stock Update the Register.  ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Packing Materials Stock Register",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Monitoring & ensuring the stock transfers in ERP.",
+        "CO-ORDINATION": "Production, Purchase, ISD",
+        "REFERENCE": "FGTN",
+        "DOCUMENTS": "LKM/SLS/DI/21",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Preparing the below MSL parts list & follow up. ",
+        "CO-ORDINATION": "Production,Sales Team",
+        "REFERENCE": "Daily report of Below MSL ",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch planning as per customers(TVSM,Quantum) requirement. ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection Material unloading, verified the invoice and materials handover the QAD in charge. Rejection invoice send to Unit-1",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "Rejection Register",
+        "DOCUMENTS": "LKM/SLS/DI/40",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Critical Material Follow-up",
+        "CO-ORDINATION": "Sales, Production, Purchase",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch vehicle Register maintenance",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch  Register ",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material storage in proper location with identification.",
+        "CO-ORDINATION": "Team Members",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle loading as per sales check list in front of QA & driver. ",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Empty unloading activities and updated the register.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintenance trolley escalating to PMD",
+        "CO-ORDINATION": "PMD",
+        "REFERENCE": "Trolley work Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Stock tacking for A,B&C class as per plan.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Perpetual inventory register",
+        "DOCUMENTS": "LKM/SLS/DI/14",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow in 3R Activity. ( Right Qty & Quality & Location )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "O.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "KIT Swing arm packing and dispatch",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "FGTN",
+        "DOCUMENTS": "LKM/SLS/DI/21",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Log Book maintenance.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Sales LOG Book",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Material stocking in a minimum space and issuing by FIFO method.",
+        "CO-ORDINATION": "Stores",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "M.BALAJI / \r\nO.MUNIRAJU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "CL (Casual Labour) work reporting.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "***",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 12,
+    "EMPLOYEE_CODE": "2190",
+    "EMPLOYEE_NAME": "R.THAMOTHARAN",
+    "SHORT_ROLES": "OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/2190.jpg",
+    "ROLES": "OFFICER",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Trolley opening stock taking and empty Trolley / crates arrangement.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Trolley opening stock Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores & All Loading bay",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch planning as per customer requirement. ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material storage in proper location with identification.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "JIT CALL / MRP / BAR Code Schedule Follow up.",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Customer Portal",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle Planning and tracking.",
+        "CO-ORDINATION": "Transport",
+        "REFERENCE": "*******",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch list updation in ERP, making invoice.",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/08",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Check list Preparation.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Critical Material Follow-up",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "*******",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM /\r\nT.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle loading as per sales check list in front of QA & driver. ",
+        "CO-ORDINATION": "QAD,Transport",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch vehicle Register maintenance",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Empty unloading activities and updated the register.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM /\r\nT.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Daily Dispatch Summary  Sheet Updation",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "Dispatch Summary Sheet ",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM /\r\nT.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer end visit for stock and Trolley verification",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Customer",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.VIGNESH",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle Trip sheet entry & Received the acknowledgement copy and close the trip sheet.",
+        "CO-ORDINATION": "Sales,\r\nFinance",
+        "REFERENCE": "Acknowledgement  Register",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.GIRIDHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection Material unloading verified the invoice and materials and handover the store in charge.",
+        "CO-ORDINATION": "QAD,\r\nFinance",
+        "REFERENCE": "Customer Rejection Register",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.SHANMUGAM /\r\nT.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle audit to be completed for new and regular vechicles on monthly basis.",
+        "CO-ORDINATION": "Transport",
+        "REFERENCE": "Vehicle audit Check list",
+        "DOCUMENTS": "LKM/SLS/DI/51",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Log Book maintenance.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Sales LOG Book",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM /\r\nT.SIVASAKTHIVEL",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch Activities  & departmental Improvement activities. (CIP)",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "LKM/PRD/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 13,
+    "EMPLOYEE_CODE": "1741",
+    "EMPLOYEE_NAME": "T.RAVISHANKAR",
+    "SHORT_ROLES": "OPE",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "STORE",
+    "EMPLOYEE_IMAGE": "./IMAGES/1741.jpg",
+    "ROLES": "OPERATOR",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.VIGNESH",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Man power monitoring.",
+        "CO-ORDINATION": "HRD",
+        "REFERENCE": "Man Power Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Material Receipt as per the schedule from RM store & Production, and document follow ups.",
+        "CO-ORDINATION": "Sales Team, Production, Purchase",
+        "REFERENCE": "Plan Vs. Actual, RM & Production Inward register",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BASKAR/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material storage in proper location with identification.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.VIGNESH/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow in 3R Activity. ( Right Qty & Quality& Location )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.VIGNESH/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material stocking in a minimum space and issuing by FIFO method.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.VIGNESH/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch plan preparation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Dispatch planning Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BASKAR/\r\nT.VIGNESH",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "FGTN Updation in ERP",
+        "CO-ORDINATION": "Sales Team, ISD",
+        "REFERENCE": "FGTN",
+        "DOCUMENTS": "LKM/SLS/DI/21",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BASKAR/\r\nT.VIGNESH",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Stock tacking for A,B,C,D class as per plan.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Perpetual inventory register",
+        "DOCUMENTS": "LKM/SLS/DI/28",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Packing Arrange to daily Dispatch  plan",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Packing STD",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BASKAR/\r\nT.VIGNESH",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "To ensure the packing slip in all dispatch parts.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Packing slip",
+        "DOCUMENTS": "LKM/SLS/DI/24",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.BASKAR/\r\nT.VIGNESH",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Preservation & records maintaining.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Preservation checklist",
+        "DOCUMENTS": "LKM/SLS/DI/07",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle planning",
+        "CO-ORDINATION": "Team  ",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BASKAR/\r\nT.VIGNESH",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Stock conversion for New parts Followup",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.VIGNESH/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Customer return empties accounting in dispatch register.",
+        "CO-ORDINATION": "Sales Team, Transport",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.BASKAR/\r\nT.VIGNESH",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "FG store internal records maintenance.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Inward and Dispatch register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "T.VIGNESH/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Improvement  activities.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "LKM/PRD/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "CIP / Suggestion to improvement DPR",
+        "CO-ORDINATION": "Team,HOD",
+        "REFERENCE": "CIP file",
+        "DOCUMENTS": "LKM/QMS/DI/30",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "***",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 14,
+    "EMPLOYEE_CODE": "2226",
+    "EMPLOYEE_NAME": "N.PUVIYARASU",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/2226.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "GEML",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Trolley Opening  Stock taking all location (LKM U3/U1/U2) and empty trolley arrangement.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores & All Loading bay",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Frame Opening Stock updation",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Frame supply updation in Plan vs Actual sheet",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Daily Commitment Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch register monitoring.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.NAGARAJ",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Daily Commitment Followup",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Daily Commitment Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.NAGARAJ",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch planning",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Plan Vs Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.NAGARAJ / R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Checklist preparation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle loading as per sales check list in front of QA & Driver.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Empty unloading activities and updating the register..",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Receiving the acknowledgement copy and close the trip sheet.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Material storing in a minimum space and issuing by FIFO method.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection material unloading verifying the invoice with material",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection document details updation in Register and handovering the doc to LKM U-I",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "S.R.MANIKANDAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Log Book maintenance.",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "LOG Book",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "R.NAGARAJ",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 15,
+    "EMPLOYEE_CODE": "2172",
+    "EMPLOYEE_NAME": "S.R.MANIKANDAN",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/2172.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "GEML",
+    "AUTHORITIES": [
+      "Sanction for OT Slip and Outpass for CL"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Trolley Opening  Stock taking all location (LKM U3/U1/U2) and empty trolley arrangement.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores & All Loading bay",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Frame Opening Stock updation",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Frame supply updation in Plan vs Actual sheet",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Daily Commitment Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch register monitoring.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Daily Commitment Followup",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Daily Commitment Sheet",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.NAGARAJ",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch planning",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Plan Vs Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.NAGARAJ / R.SIVAKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Checklist preparation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle loading as per sales check list in front of QA & Driver.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Empty unloading activities and updating the register..",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Receiving the acknowledgement copy and close the trip sheet.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Material storing in a minimum space and issuing by FIFO method.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection material unloading verifying the invoice with material",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection document details updation in Register and handovering the doc to LKM U-I",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Log Book maintenance.",
+        "CO-ORDINATION": "sales Team",
+        "REFERENCE": "LOG Book",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "N.PUVIYARASU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 16,
+    "EMPLOYEE_CODE": "2094",
+    "EMPLOYEE_NAME": "M.GIRIDHARAN",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "ACCOUNTS",
+    "EMPLOYEE_IMAGE": "./IMAGES/2094.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "TVS / GEML / LEYLAND / TAFE / NEW CUSTOMER",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities .",
+        "CO-ORDINATION": "Sales, Accounts",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Arraning Triplicate copy submission to Accounts",
+        "CO-ORDINATION": "Sales, Accounts",
+        "REFERENCE": "****",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Invoice Preparation as per Sales Delivery Advice",
+        "CO-ORDINATION": "Sales, Accounts, ISD",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/22",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Invoice copy sent to customer end.",
+        "CO-ORDINATION": "Sales, Accounts, ISD",
+        "REFERENCE": "ERP , Customer Portal",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Barcode Generation / ASN as Per Invoice",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Customer Portal",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "E-way Bill Generation as Per Invoice",
+        "CO-ORDINATION": "All Dept",
+        "REFERENCE": "E-way bill website",
+        "DOCUMENTS": "LKM/SLS/DI/11",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Verification of mail sent to all customer",
+        "CO-ORDINATION": "Sales, Accounts, ISD",
+        "REFERENCE": "Mail",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Pending Invoice Followup",
+        "CO-ORDINATION": "All Dept",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Invoice Preparation / Transfer Invoice for all dept",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "E-Way Bill verification with all invoice in website",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "Eway Bill Website",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Job Work / Supplementary Invoice Preparation",
+        "CO-ORDINATION": "All Dept",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/22",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Verifying Invoice with Barcode,Eway bill ",
+        "CO-ORDINATION": "All Dept",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Updation of Sales return register as per MRA Doc",
+        "CO-ORDINATION": "Sales,Accounts,QAD",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/40",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Preparation of Delivery Challan",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Updation of Scrap Invoice",
+        "CO-ORDINATION": "Accounts",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/08",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch list updation in ERP, making invoice.",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/08",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "***",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      }
+    ]
+  },
+  {
+    "SINO": 17,
+    "EMPLOYEE_CODE": "2443",
+    "EMPLOYEE_NAME": "O.MUNIRAJU",
+    "SHORT_ROLES": "OPE",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "STORE",
+    "EMPLOYEE_IMAGE": "./IMAGES/2443.jpg",
+    "ROLES": "OPERATOR",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Trolley Opening  Stock taking all location (LKM U1/U2/KNL) and empty trolley arrangement.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Stores",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Checklist preparation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Material Receipt as per the schedule from  Production and document follow ups.",
+        "CO-ORDINATION": "Sales Team, Production",
+        "REFERENCE": "Plan Vs. Actual, RM & Production Inward register",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Packing Materials Opening stock Update the Register.  ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Packing Materials Stock Register",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle loading as per sales check list in front of QA & Driver.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Check list",
+        "DOCUMENTS": "LKM/SLS/DI/23",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch vehicle register maintenance.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Stock tacking for A,B&C class as per plan.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Perpetual inventory register",
+        "DOCUMENTS": "LKM/SLS/DI/14",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow in 3R Activity. ( Right Qty & Quality & Location )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material storage in proper location with identification.",
+        "CO-ORDINATION": "Team Members",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Empty unloading activities and updating the register.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MARIMUTHU",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Maintenance trolley escalating to PMD",
+        "CO-ORDINATION": "PMD",
+        "REFERENCE": "Trolley work Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.MARIMUTHU/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Rejection material unloading verifying the invoice and material handling to store In charge.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.MARIMUTHU/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "KIT Swing arm packing and dispatch",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "FGTN",
+        "DOCUMENTS": "LKM/SLS/DI/21",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.MARIMUTHU / ",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material followup escalating critical material to Incharge",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.MARIMUTHU/\r\nM.BALAJI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "CL (Casual Labour) work reporting.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 18,
+    "EMPLOYEE_CODE": "2531",
+    "EMPLOYEE_NAME": "T.SIVASAKTHIVEL",
+    "SHORT_ROLES": "AD.OPE",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "STORE",
+    "EMPLOYEE_IMAGE": "./IMAGES/2531.jpg",
+    "ROLES": "AD.OPERATOR",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Maintain 1S & 2S activities in all FG Stores.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/QMS/DI/26",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Man power monitoring.",
+        "CO-ORDINATION": "HRD",
+        "REFERENCE": "Man Power Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Material Receipt as per the schedule from RM store & Production, and document follow ups.",
+        "CO-ORDINATION": "Sales Team, Production, Purchase",
+        "REFERENCE": "Plan Vs. Actual, RM & Production Inward register",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material storage in proper location with identification.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow in 3R Activity. ( Right Qty & Quality& Location )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Material stocking in a minimum space and issuing by FIFO method.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "FIFO priority index",
+        "DOCUMENTS": "LKM/SLS/DI/16",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch plan preparation.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Dispatch planning Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM/\r\nR.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "FGTN Updation in ERP",
+        "CO-ORDINATION": "Sales Team, ISD",
+        "REFERENCE": "FGTN",
+        "DOCUMENTS": "LKM/SLS/DI/21",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM/\r\nR.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Stock tacking for A,B,C,D class as per plan.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Perpetual inventory register",
+        "DOCUMENTS": "LKM/SLS/DI/28",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Packing Arrange to daily Dispatch  plan",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Packing STD",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM/\r\nR.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "To ensure the packing slip in all dispatch parts.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Packing slip",
+        "DOCUMENTS": "LKM/SLS/DI/24",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.SHANMUGAM/\r\nR.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Preservation & records maintaining.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Preservation checklist",
+        "DOCUMENTS": "LKM/SLS/DI/07",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "T.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle planning",
+        "CO-ORDINATION": "Team  ",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.SHANMUGAM/\r\nR.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Stock conversion for New parts Followup",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Customer return empties accounting in dispatch register.",
+        "CO-ORDINATION": "Sales Team, Transport",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "N.SHANMUGAM/\r\nR.THAMOTHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "FG store internal records maintenance.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Inward and Dispatch register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.THAMOTHARAN/\r\nT.SHANMUGAM",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Improvement  activities.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "LKM/PRD/DI/70",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "CIP / Suggestion to improvement DPR",
+        "CO-ORDINATION": "Team,HOD",
+        "REFERENCE": "CIP file",
+        "DOCUMENTS": "LKM/QMS/DI/30",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Ensure Discipline among the workmen",
+        "CO-ORDINATION": "Operator/ CL / Helper",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "***",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 19,
+    "EMPLOYEE_CODE": "2023",
+    "EMPLOYEE_NAME": "N.POOVIZHI",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "EMPLOYEE_IMAGE": "./IMAGES/2023.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "TVS / GEML / LEYLAND / TAFE / NEW CUSTOMER",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Daily Sales MIS updation.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Sales Plan vs Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Projection updation",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Presentation (Monday meeting& DWM meeting)",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Weekly",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Long GRN pending communicate to HOD",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Customer Website",
+        "DOCUMENTS": "LKM/SLS/DI/12",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "COPQ Updation",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Monthly transportation trips calculated and update in system.",
+        "CO-ORDINATION": "FG.Store",
+        "REFERENCE": "Transportation",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "ODC Updation",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "P.O Follow-up",
+        "CO-ORDINATION": "Sales,Costing,Accounts, ISD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/50",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN / R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Maintenance of QMS Documents & Implementation of new requirements",
+        "CO-ORDINATION": "Sales , QMS",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer satisfaction survey report preparation",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Customer Satisfaction ",
+        "DOCUMENTS": "LKM/SLS/DI/29",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "To avoid Premium freight and maintain the register.",
+        "CO-ORDINATION": "Production, Purchase,         Finance",
+        "REFERENCE": "Premium freight Register",
+        "DOCUMENTS": "LKM/SLS/DI/27",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "JIT call performance updation day wise",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Daily JIT call Status",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Kaizen Result updation Monitoring",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Kaizen file",
+        "DOCUMENTS": "LKM/QAD/DI/130",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "KPI updation",
+        "CO-ORDINATION": "QMS",
+        "REFERENCE": "KPI",
+        "DOCUMENTS": "LKM/QMS/DI/10",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Order Short close / Updation",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/08",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Monthly sales report preparation.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "sales report",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Non Moving parts details Updation",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/53",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Manpower Followup",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Preparation of Packing Standard for new parts",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "***",
+        "DOCUMENTS": "***",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN /\r\nK.MANOJKUMAR",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "MD data updation",
+        "CO-ORDINATION": "HOD, QMS",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "CIP / Suggestion to improvement DPR",
+        "CO-ORDINATION": "Team,HOD",
+        "REFERENCE": "CIP file",
+        "DOCUMENTS": "LKM/QMS/DI/30",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.RAVICHANDRAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Department Co-ordinate",
+        "CO-ORDINATION": "HOD ",
+        "REFERENCE": "CFT",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 20,
+    "EMPLOYEE_CODE": "2550",
+    "EMPLOYEE_NAME": "R.RAVICHANDRAN",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "EMPLOYEE_IMAGE": "./IMAGES/2550.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "TVS / GEML / LEYLAND / TAFE / NEW CUSTOMER",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Daily Sales MIS updation & share to HOD",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Sales Plan vs Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Data Analysis & Automation",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "To assist HOD to Prepare Company's Business Plan and monitor  to Achieve it's  Goals & Objectives.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Weekly",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "MRM & MPRM Presentation updation / Customer Failure Analysis & Presentation",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "A.JANNATHUL FIRDHOUS / N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer satisfaction survey report preparation and customer visit.",
+        "CO-ORDINATION": "QAD",
+        "REFERENCE": "Customer Satisfaction ",
+        "DOCUMENTS": "LKM/SLS/DI/29",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Sales Planning"
+      },
+      {
+        "RESPONSIBILITIES": "NPD Co-ordinate with document updation and followup in initial stage",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "APQP",
+        "DOCUMENTS": "LKM/NPD/DI/01",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Container BOM Preparation",
+        "CO-ORDINATION": "Sales,Costing,Accounts, ISD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/SLS/DI/50",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "K.MANOJKUMAR/R.UMAMAGESHWARI/\r\nN.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Preparation of Packing Standard for new parts",
+        "CO-ORDINATION": "Sales , QMS",
+        "REFERENCE": "****",
+        "DOCUMENTS": "LKM/NPD/DI/38",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "K.MANOJKUMAR/R.UMAMAGESHWARI/\r\nN.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Implementation and Improvement of new requirements for QMS document",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "K.MANOJKUMAR/R.UMAMAGESHWARI/\r\nN.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "Kaizen Result updation Monitoring",
+        "CO-ORDINATION": "Production, Purchase,         Finance",
+        "REFERENCE": "Kaizen file",
+        "DOCUMENTS": "LKM/QAD/DI/130",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "CIP / Suggestion to improvement",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "CIP file",
+        "DOCUMENTS": "LKM/QMS/DI/30",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 21,
+    "EMPLOYEE_CODE": "2206",
+    "EMPLOYEE_NAME": "M.DEEPA",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH / ACCOUNTS",
+    "EMPLOYEE_IMAGE": "./IMAGES/2206.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "TVS / GEML / LEYLAND / TAFE / NEW CUSTOMER",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Daily verification of dispatch summary with Invoice Qty",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "AL  & FED Plan vs Actual Updation ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Arraning Triplicate copy submission to Accounts",
+        "CO-ORDINATION": "Sales, Accounts",
+        "REFERENCE": "****",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.GIRIDHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Invoice copy sent to customer end.",
+        "CO-ORDINATION": "Sales, Accounts, ISD",
+        "REFERENCE": "ERP , Customer Portal",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.GIRIDHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "GRN followup for Ashok leyland",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "GRN Follow up",
+        "DOCUMENTS": "LKM/SLS/DI/12",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Invoice Preparation as per Sales Delivery Advice",
+        "CO-ORDINATION": "Sales, Accounts, ISD",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/22",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "Dispatch Incharge",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Barcode Generation / ASN / E-way Bill as Per Invoice",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Customer Portal / E-waybill",
+        "DOCUMENTS": "LKM/SLS/DI/11",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "Dispatch Incharge",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Verification of mail sent to all customer",
+        "CO-ORDINATION": "Sales, Accounts, ISD",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.GIRIDHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Verifying Invoice with Barcode,Eway bill , Gate entry",
+        "CO-ORDINATION": "Sales, Accounts, ISD",
+        "REFERENCE": "Mail",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "Dispatch Incharge",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "All customer Supplementary Invoice Preparation",
+        "CO-ORDINATION": "Accounts",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.GIRIDHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Empty Container updation in Dispatch Register",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "Dispatch Incharge",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Updation of Sales return register as per MRA Doc",
+        "CO-ORDINATION": "Sales,Accounts,QAD",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/08",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.GIRIDHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Preparation of Delivery Challan",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.GIRIDHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "DWM meeting PPT updation",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Receiving Dispatch Plan Mail from KNL for Invoicing & Commitments",
+        "CO-ORDINATION": "KNL Sales",
+        "REFERENCE": "Invoice Request",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "TAFE(FED) Dispatch plan Mail to Customer & KNL with Mark CC to HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "All Original Copy Submission (Courier).",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "Original Invoices Submission Register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "***",
+        "REFERENCE": "***",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 22,
+    "EMPLOYEE_CODE": "2492",
+    "EMPLOYEE_NAME": "R.UMAMAGESHWARI",
+    "SHORT_ROLES": "JR.OFF",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH / ACCOUNTS",
+    "EMPLOYEE_IMAGE": "./IMAGES/2492.jpg",
+    "ROLES": "JR.OFFICER",
+    "CUSTOMER": "TAFE / LEYLAND",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "AL & TAFE(FED) Plan sheet updation ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "AL ASN Downloaded & Convert to Our Excel Format. ",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "ASN Preparation",
+        "DOCUMENTS": "LKM/SLS/DI/09",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Daily DWM meeting PPT updation",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "K.RAMYASHREE",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Receiving Dispatch Plan Mail from KNL for Invoicing & Commitments",
+        "CO-ORDINATION": "KNL Sales",
+        "REFERENCE": "Invoice Request",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "K.MANOJKUMAR/R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Day wise Sale & production value mail to internal team",
+        "CO-ORDINATION": "Production, Purchase",
+        "REFERENCE": "Mail",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily follow up",
+        "SECONDLINE PERSON": "K.RAMYASHREE",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Leyland / FED PO updation",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "LKM/SLS/DI/50",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "K.MANOJKUMAR/R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "TAFE(FED) Dispatch plan Mail to Customer & KNL with Mark CC to HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Plan Vs. Actual",
+        "DOCUMENTS": "LKM/SLS/DI/20",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Cust Followup"
+      },
+      {
+        "RESPONSIBILITIES": "FG (D3 Closing).",
+        "CO-ORDINATION": "RM.Store",
+        "REFERENCE": "D3 Register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Sales Order Updation / Short Close",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "ERP",
+        "DOCUMENTS": "LKM/SLS/DI/08",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Ups KNL Invoice & Dispatch List & Item Transfer ",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Portal",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "K.MANOJKUMAR/R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Invoice Preparation for Leyland / FED",
+        "CO-ORDINATION": "Sales, Accounts",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "LKM/SLS/DI/22",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.GIRIDHARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Customer wise ASN preparation & Verify the Dispatch.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Filling (sales check list, po, customer-corr, daily plan vs. actual).",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle trip monitoring ( veh. type wise / plant wise )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Vehicle trip monitoring register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Weekly Shift Schedule Updation",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "Manpower Register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Weekly",
+        "SECONDLINE PERSON": "N.POOVIZHI",
+        "SALES ACTIVITIES CONTRIBUTION": "Manpower"
+      },
+      {
+        "RESPONSIBILITIES": "Stationary Items Follow up",
+        "CO-ORDINATION": "ConsR.UMAMAGESHWARIble",
+        "REFERENCE": "Stationary Note",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Monthly",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "All Original Copy Submission (Courier).",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "Original Invoices Submission Register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "M.DEEPA",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "HOD",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "*****",
+        "SECONDLINE PERSON": "*****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 23,
+    "EMPLOYEE_CODE": "2574",
+    "EMPLOYEE_NAME": "K.RAMYASHREE",
+    "SHORT_ROLES": "AD.TRA",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "STORE",
+    "EMPLOYEE_IMAGE": "./IMAGES/2574.jpg",
+    "ROLES": "AD.TRAINEE",
+    "CUSTOMER": "TVS / GEML / LEYLAND / TAFE / NEW CUSTOMER",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "FG Checking & Acknowledgment copy Scanning & Storing data in Excel",
+        "CO-ORDINATION": "Finance",
+        "REFERENCE": "Acknowledgment Register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer Rejection Monitoring. ",
+        "CO-ORDINATION": "QAD,Finance",
+        "REFERENCE": "Customer Rejection Register",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Customer Complaint Monitoring. ",
+        "CO-ORDINATION": "QAD,Finance",
+        "REFERENCE": "Customer Complaint Register",
+        "DOCUMENTS": "LKM/QAD/DI/58",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Barcode Label generation in TSC Software",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "TCS Software",
+        "DOCUMENTS": "LKM/SLS/DI/47",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "TVS M Web Lkm Opening Stock Updation",
+        "CO-ORDINATION": "Customer",
+        "REFERENCE": "Customer Website",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch Register Qty and Check list Qty verified",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Barcode Qty and Invoice Qty verified",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Manpower data updation",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "****",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Barcode Label Procurement",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "LKM/SLS/DI/47",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      },
+      {
+        "RESPONSIBILITIES": "Customer return empties accounting in dispatch register",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Fg store internal records maintenance",
+        "CO-ORDINATION": "FG Store",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "As per plan",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "FG Store Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Dispatch  register monitoring.",
+        "CO-ORDINATION": "FG Store",
+        "REFERENCE": "Dispatch Register",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Dispatch Activity"
+      },
+      {
+        "RESPONSIBILITIES": "Vehicle trip monitoring ( veh. type wise / plant wise )",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "Vehicle trip monitoring register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Web Schedule Updation",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "Customer Portal",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.UMAMAGESHWARI",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Follow Procedure as per IATF 16949:2016 QMS",
+        "CO-ORDINATION": "HOD & MQMS",
+        "REFERENCE": "Manual",
+        "DOCUMENTS": "****",
+        "FREQUENCY/TARGET": "****",
+        "SECONDLINE PERSON": "****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Improvement  activities",
+        "CO-ORDINATION": "Team",
+        "REFERENCE": "CIP Register",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "*****",
+        "SECONDLINE PERSON": "*****",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      },
+      {
+        "RESPONSIBILITIES": "Any other Job assigned by HOD.",
+        "CO-ORDINATION": "Sales",
+        "REFERENCE": "*****",
+        "DOCUMENTS": "*****",
+        "FREQUENCY/TARGET": "*****",
+        "SECONDLINE PERSON": "*****",
+        "SALES ACTIVITIES CONTRIBUTION": "Others"
+      }
+    ]
+  },
+  {
+    "SINO": 24,
+    "EMPLOYEE_CODE": "OBS",
+    "EMPLOYEE_NAME": "T.VIGNESH",
+    "SHORT_ROLES": "AD.OPE",
+    "DEPARTMENT": "SALES",
+    "ACTIIVITIES": "DISPATCH",
+    "EMPLOYEE_IMAGE": "./IMAGES/OBS.jpg",
+    "ROLES": "AD.OPERATOR",
+    "CUSTOMER": "TVS",
+    "AUTHORITIES": [
+      "****"
+    ],
+    "CHILDREN": [
+      {
+        "RESPONSIBILITIES": "Trolley Opening  Stock taking all location (LKM U1/U2/KNL) and empty trolley arrangement.",
+        "CO-ORDINATION": "Sales Team",
+        "REFERENCE": "***",
+        "DOCUMENTS": "Supporting Document",
+        "FREQUENCY/TARGET": "Daily Followup",
+        "SECONDLINE PERSON": "R.MADHESHWARAN",
+        "SALES ACTIVITIES CONTRIBUTION": "Documentation"
+      }
+    ]
+  }
+]
