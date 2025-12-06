@@ -6,6 +6,7 @@
 <title>Sales Team Roles & Responsibilities</title>
 <link rel="icon" type="image/x-icon" href="favicon.png">
 <style>
+/* ... (CSS remains the same) ... */
 * { box-sizing:border-box; margin:0; padding:0; }
 body, html { font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif; background:#fff9f4; color:#4b433b; }
 
@@ -83,7 +84,7 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
 
 /* --- New Image Modal Styles --- */
 #imageModal {
-    display: none; /* Key: Ensure it starts hidden */
+    display: none; 
     position: fixed; 
     z-index: 5000; 
     left: 0;
@@ -183,7 +184,8 @@ let nameIndex=new Map();
 
 // --- Global Variable for Hover Delay ---
 let hoverTimer = null; 
-const HOVER_DELAY_MS = 300; // 0.3 seconds
+// KEY CHANGE: Set hover delay to 0.2 seconds (200ms)
+const HOVER_DELAY_MS = 200; 
 
 // --- Event Listeners for Controls ---
 
@@ -223,7 +225,6 @@ clearContribBtn.onclick = ()=>{ activeContrib=[]; updateUI(); render(); };
 // Function to close the modal
 function closeModal() {
     imageModal.classList.remove('visible');
-    // Ensure display: none is explicitly set
     imageModal.style.display = 'none'; 
 }
 
@@ -235,7 +236,7 @@ imageModal.addEventListener('click', (e) => {
     }
 });
 
-// Close modal immediately if the mouse leaves the modal image
+// Close modal when the mouse leaves the large image (Modal Content)
 modalContent.addEventListener('mouseleave', closeModal);
 
 // Close modal on Escape key press
@@ -494,17 +495,16 @@ function render(){
   });
 }
 
-// Image Modal Handler with 300ms delay and instant mouse-out close
+// Image Modal Handler with 200ms delay and solid mouse-out logic
 function attachPreview(imgEl, emp){
     // Mouse Enter (with delay)
     imgEl.addEventListener('mouseenter', () => { 
-        // Clear any existing timer to prevent multiple popups
         clearTimeout(hoverTimer);
 
-        // Update the image source immediately so it's ready when the timer finishes
+        // Update the image source immediately
         modalContent.src = imgEl.src;
 
-        // Set a new timer
+        // Set the timer for the delayed popup
         hoverTimer = setTimeout(() => {
             // ONLY show the modal if the mouse is *still* over the element after the delay
             if (imgEl.matches(':hover')) {
@@ -514,22 +514,23 @@ function attachPreview(imgEl, emp){
         }, HOVER_DELAY_MS);
     });
 
-    // Mouse Leave (clear delay AND close modal if it was open)
+    // Mouse Leave (clear delay and close modal)
     imgEl.addEventListener('mouseleave', () => {
-        // Clear the timer (prevents delayed opening)
+        // 1. Clear the timer (stops delayed opening if mouse leaves early)
         clearTimeout(hoverTimer); 
         
-        // Hide the modal immediately when leaving the small image, 
-        // UNLESS the mouse immediately entered the large modal image area.
-        setTimeout(() => {
-            if (!imgEl.matches(':hover') && !modalContent.matches(':hover')) {
-                closeModal();
-            }
-        }, 50); // 50ms buffer
+        // 2. Check immediately if the mouse moved from the small image to the large modal image.
+        // If the modal is currently visible AND the mouse is NOT over the modal content, close it.
+        // This is the solid fix for the border transition/flickering.
+        if (imageModal.classList.contains('visible') && !modalContent.matches(':hover')) {
+            closeModal();
+        }
+        // Note: If modalContent.matches(':hover') is true, the user has successfully moved
+        // onto the large preview, and the modalContent mouseleave handler will close it later.
     });
 }
 
-// FINAL CHANGE: Ensure modal is hidden immediately upon script execution/load
+// Ensure modal is hidden immediately upon script execution/load
 document.addEventListener('DOMContentLoaded', closeModal); 
 
 filterInput.addEventListener('input',()=>{ updateUI(); render(); });
