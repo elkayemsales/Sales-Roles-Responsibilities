@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sales Team Roles & Responsibilities</title>
 <link rel="icon" type="image/x-icon" href="favicon.png">
-
 <style>
 * { box-sizing:border-box; margin:0; padding:0; }
 body, html { font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif; background:#fff9f4; color:#4b433b; }
@@ -57,26 +56,26 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
 <div class="overlay" id="overlay"></div>
 
 <aside id="sidebar">
-  <input id="filterInput" type="search" placeholder="Search name, code, dept, customer...">
-  <button id="viewToggleBtn">Switch to Basic View</button>
-  <button id="clearFilterBtn" disabled>Clear filters</button>
-  <div class="filter-block">
-    <h2>Filter by Customer</h2>
-    <div id="customerFilters"></div>
-  </div>
-  <div class="filter-block">
-    <h2>Filter by Role</h2>
-    <div id="roleFilters"></div>
-  </div>
-  <div class="filter-block">
-    <h2>Filter by Contribution</h2>
-    <div id="contribFilters"></div>
-  </div>
+  <input id="filterInput" type="search" placeholder="Search name, code, dept, customer...">
+  <button id="viewToggleBtn">Switch to Basic View</button>
+  <button id="clearFilterBtn" disabled>Clear filters</button>
+  <div class="filter-block">
+    <h2>Filter by Customer</h2>
+    <div id="customerFilters"></div>
+  </div>
+  <div class="filter-block">
+    <h2>Filter by Role</h2>
+    <div id="roleFilters"></div>
+  </div>
+  <div class="filter-block">
+    <h2>Filter by Contribution</h2>
+    <div id="contribFilters"></div>
+  </div>
 </aside>
 
 <main id="main">
-  <h1>Sales Team Roles & Responsibilities</h1>
-  <div id="contentArea"></div>
+  <h1>Sales Team Roles & Responsibilities</h1>
+  <div id="contentArea"></div>
 </main>
 
 <div class="img-preview" id="imgPreview"><img id="imgPreviewImg"></div>
@@ -103,194 +102,229 @@ let nameIndex=new Map();
 
 // Sidebar toggle
 sidebarBtn.onclick = ()=>{
-  sidebar.classList.toggle('open'); 
-  overlay.classList.toggle('visible');
-  main.classList.toggle('shifted');
+  sidebar.classList.toggle('open'); 
+  overlay.classList.toggle('visible');
+  main.classList.toggle('shifted');
 };
 overlay.onclick = ()=>{
-  sidebar.classList.remove('open'); 
-  overlay.classList.remove('visible'); 
-  main.classList.remove('shifted');
+  sidebar.classList.remove('open'); 
+  overlay.classList.remove('visible'); 
+  main.classList.remove('shifted');
 };
 
 // Back to Top button
 window.addEventListener('scroll',()=>{ backToTop.style.display = window.scrollY>200?'block':'none'; });
 backToTop.onclick = ()=>{ window.scrollTo({ top:0, behavior:'smooth' }); };
 
+// Define the custom role hierarchy
+const customRoleOrder = {
+  'HEAD OF THE DEPARTMENT': 1,
+  'SR.OFFICER': 2,
+  'OFFICER': 3,
+  'JR.OFFICER': 4,
+  'OPERATOR': 5,
+  'AD.OPERATOR': 6,
+  'AD.TRAINEE': 7
+};
+
 // Load JSON
 async function loadJSON(){
-  const res = await fetch('Data.json');
-  data = await res.json();
-  data.forEach(d=>{
-    if(!Array.isArray(d.AUTHORITIES)) d.AUTHORITIES = d.AUTHORITIES ? [d.AUTHORITIES] : [];
-    if(!Array.isArray(d.CHILDREN)) d.CHILDREN = d.CHILDREN||[];
-    if(!Array.isArray(d.CUSTOMER)) d.CUSTOMER = d.CUSTOMER ? (Array.isArray(d.CUSTOMER)?d.CUSTOMER:[d.CUSTOMER]) : [];
-    // Normalize for second-line matching
-    nameIndex.set((d.EMPLOYEE_NAME||'').toLowerCase(), d);
-  });
-  buildFilters();
-  render();
+  const res = await fetch('Data.json');
+  data = await res.json();
+  
+  // --- START: Custom Sorting Logic ---
+  data.sort((a, b) => {
+    // Get custom rank for primary sort
+    const roleA = (a.ROLES || '').toUpperCase();
+    const roleB = (b.ROLES || '').toUpperCase();
+    const rankA = customRoleOrder[roleA] || 999; // 999 ensures unlisted roles go last
+    const rankB = customRoleOrder[roleB] || 999;
+
+    // 1. Sort by custom role rank (Ascending)
+    if (rankA !== rankB) {
+      return rankA - rankB;
+    }
+
+    // 2. Roles are equal, sort by Employee Code (Alphabetically Ascending)
+    const codeA = (a.EMPLOYEE_CODE || '').toUpperCase();
+    const codeB = (b.EMPLOYEE_CODE || '').toUpperCase();
+    if (codeA < codeB) return -1;
+    if (codeA > codeB) return 1;
+    
+    return 0;
+  });
+  // --- END: Custom Sorting Logic ---
+
+  data.forEach(d=>{
+    if(!Array.isArray(d.AUTHORITIES)) d.AUTHORITIES = d.AUTHORITIES ? [d.AUTHORITIES] : [];
+    if(!Array.isArray(d.CHILDREN)) d.CHILDREN = d.CHILDREN||[];
+    if(!Array.isArray(d.CUSTOMER)) d.CUSTOMER = d.CUSTOMER ? (Array.isArray(d.CUSTOMER)?d.CUSTOMER:[d.CUSTOMER]) : [];
+    // Normalize for second-line matching
+    nameIndex.set((d.EMPLOYEE_NAME||'').toLowerCase(), d);
+  });
+  buildFilters();
+  render();
 }
 
 // Build filters dynamically
 function buildFilters(){
-  // Roles
-  const roles=[...new Set(data.map(d=>d.ROLES).filter(Boolean))];
-  roleFiltersDiv.innerHTML='';
-  roles.forEach(r=>{
-    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=r;
-    b.onclick=()=>{ activeRole = activeRole===r?null:r; updateUI(); render(); };
-    roleFiltersDiv.appendChild(b);
-  });
+  // Roles
+  const roles=[...new Set(data.map(d=>d.ROLES).filter(Boolean))];
+  roleFiltersDiv.innerHTML='';
+  roles.forEach(r=>{
+    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=r;
+    b.onclick=()=>{ activeRole = activeRole===r?null:r; updateUI(); render(); };
+    roleFiltersDiv.appendChild(b);
+  });
 
-  // Contribution
-  const contribs=[...new Set(data.flatMap(d=>d.CHILDREN.map(c=>c['SALES ACTIVITIES CONTRIBUTION']).filter(Boolean)))];
-  contribFiltersDiv.innerHTML='';
-  contribs.forEach(c=>{
-    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
-    b.onclick=()=>{ activeContrib = activeContrib===c?null:c; updateUI(); render(); };
-    contribFiltersDiv.appendChild(b);
-  });
+  // Contribution
+  const contribs=[...new Set(data.flatMap(d=>d.CHILDREN.map(c=>c['SALES ACTIVITIES CONTRIBUTION']).filter(Boolean)))];
+  contribFiltersDiv.innerHTML='';
+  contribs.forEach(c=>{
+    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
+    b.onclick=()=>{ activeContrib = activeContrib===c?null:c; updateUI(); render(); };
+    contribFiltersDiv.appendChild(b);
+  });
 
-  // Customers (split and unique)
-  const custSet=new Set();
-  data.forEach(d=>{
-    d.CUSTOMER.forEach(c=>{
-      c.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>custSet.add(s));
-    });
-  });
-  customerFiltersDiv.innerHTML='';
-  Array.from(custSet).sort().forEach(c=>{
-    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
-    b.onclick=()=>{ activeCustomer = activeCustomer===c?null:c; updateUI(); render(); };
-    customerFiltersDiv.appendChild(b);
-  });
+  // Customers (split and unique)
+  const custSet=new Set();
+  data.forEach(d=>{
+    d.CUSTOMER.forEach(c=>{
+      c.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>custSet.add(s));
+    });
+  });
+  customerFiltersDiv.innerHTML='';
+  Array.from(custSet).sort().forEach(c=>{
+    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
+    b.onclick=()=>{ activeCustomer = activeCustomer===c?null:c; updateUI(); render(); };
+    customerFiltersDiv.appendChild(b);
+  });
 
-  updateUI();
+  updateUI();
 }
 
 // Update UI active classes
 function updateUI(){
-  [...roleFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeRole));
-  [...contribFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeContrib));
-  [...customerFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeCustomer));
-  clearBtn.disabled = !(activeRole||activeContrib||activeCustomer||filterInput.value.trim().length>0);
+  [...roleFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeRole));
+  [...contribFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeContrib));
+  [...customerFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeCustomer));
+  clearBtn.disabled = !(activeRole||activeContrib||activeCustomer||filterInput.value.trim().length>0);
 }
 clearBtn.onclick = ()=>{ activeRole=activeContrib=activeCustomer=null; filterInput.value=''; updateUI(); render(); };
 
 // Basic/Full view toggle
 viewToggleBtn.onclick = ()=>{
-  basicView = !basicView;
-  viewToggleBtn.textContent = basicView ? 'Switch to Full View' : 'Switch to Basic View';
-  render();
+  basicView = !basicView;
+  viewToggleBtn.textContent = basicView ? 'Switch to Full View' : 'Switch to Basic View';
+  render();
 };
 
 // Render employee cards
 function render(){
-  const q = filterInput.value.trim().toLowerCase();
-  let visible = data.slice();
-  if(activeRole) visible = visible.filter(d=>d.ROLES===activeRole);
-  if(activeContrib) visible = visible.filter(d=>d.CHILDREN.some(c=>c['SALES ACTIVITIES CONTRIBUTION']===activeContrib));
-  if(activeCustomer) visible = visible.filter(d=>d.CUSTOMER.some(c=>c.split(/[\/,;\|]+/).map(x=>x.trim().toLowerCase()).includes(activeCustomer.toLowerCase())));
-  if(q) visible = visible.filter(d=>{
-    const top = (d.EMPLOYEE_NAME+' '+d.EMPLOYEE_CODE+' '+d.ROLES+' '+(d.DEPARTMENT||'')).toLowerCase();
-    const auth = d.AUTHORITIES.some(a=>a.toLowerCase().includes(q));
-    const child = d.CHILDREN.some(c=>((c.RESPONSIBILITIES||'')+' '+(c['SALES ACTIVITIES CONTRIBUTION']||'')).toLowerCase().includes(q));
-    const cust = d.CUSTOMER.some(c=>c.toLowerCase().includes(q));
-    return top.includes(q)||auth||child||cust;
-  });
+  const q = filterInput.value.trim().toLowerCase();
+  let visible = data.slice();
+  if(activeRole) visible = visible.filter(d=>d.ROLES===activeRole);
+  if(activeContrib) visible = visible.filter(d=>d.CHILDREN.some(c=>c['SALES ACTIVITIES CONTRIBUTION']===activeContrib));
+  if(activeCustomer) visible = visible.filter(d=>d.CUSTOMER.some(c=>c.split(/[\/,;\|]+/).map(x=>x.trim().toLowerCase()).includes(activeCustomer.toLowerCase())));
+  if(q) visible = visible.filter(d=>{
+    const top = (d.EMPLOYEE_NAME+' '+d.EMPLOYEE_CODE+' '+d.ROLES+' '+(d.DEPARTMENT||'')).toLowerCase();
+    const auth = d.AUTHORITIES.some(a=>a.toLowerCase().includes(q));
+    const child = d.CHILDREN.some(c=>((c.RESPONSIBILITIES||'')+' '+(c['SALES ACTIVITIES CONTRIBUTION']||'')).toLowerCase().includes(q));
+    const cust = d.CUSTOMER.some(c=>c.toLowerCase().includes(q));
+    return top.includes(q)||auth||child||cust;
+  });
 
-  contentArea.innerHTML='';
-  if(!visible.length){ contentArea.innerHTML='<p>No matching records found.</p>'; return; }
+  contentArea.innerHTML='';
+  if(!visible.length){ contentArea.innerHTML='<p>No matching records found.</p>'; return; }
 
-  visible.forEach(emp=>{
-    const card=document.createElement('div'); card.className='employee-card';
-    const top=document.createElement('div'); top.className='employee-top';
-    const img=document.createElement('img'); img.src=emp.EMPLOYEE_IMAGE||'https://via.placeholder.com/90?text=No'; img.alt=emp.EMPLOYEE_NAME;
-    attachPreview(img, emp);
-    const meta=document.createElement('div'); meta.className='meta';
-    meta.innerHTML = `<h3>${emp.EMPLOYEE_NAME}</h3><div class="code">${emp.EMPLOYEE_CODE||''}</div><small>${emp.ROLES||''}</small><small>Dept: ${emp.DEPARTMENT||'-'}</small>`;
-    top.append(img, meta); card.appendChild(top);
+  visible.forEach(emp=>{
+    const card=document.createElement('div'); card.className='employee-card';
+    const top=document.createElement('div'); top.className='employee-top';
+    const img=document.createElement('img'); img.src=emp.EMPLOYEE_IMAGE||'https://via.placeholder.com/90?text=No'; img.alt=emp.EMPLOYEE_NAME;
+    attachPreview(img, emp);
+    const meta=document.createElement('div'); meta.className='meta';
+    meta.innerHTML = `<h3>${emp.EMPLOYEE_NAME}</h3><div class="code">${emp.EMPLOYEE_CODE||''}</div><small>${emp.ROLES||''}</small><small>Dept: ${emp.DEPARTMENT||'-'}</small>`;
+    top.append(img, meta); card.appendChild(top);
 
-    // Always show customer in basic and full
-    if(emp.CUSTOMER.length){
-      const cDiv=document.createElement('div'); cDiv.className='customer-follow';
-      cDiv.innerHTML = '<strong>Customer Follow-ups:</strong>';
-      emp.CUSTOMER.forEach(citem=>{
-        citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{
-          const chip=document.createElement('span'); chip.className='customer-chip'; chip.textContent=s; cDiv.appendChild(chip);
-        });
-      });
-      card.appendChild(cDiv);
-    }
+    // Always show customer in basic and full
+    if(emp.CUSTOMER.length){
+      const cDiv=document.createElement('div'); cDiv.className='customer-follow';
+      cDiv.innerHTML = '<strong>Customer Follow-ups:</strong>';
+      emp.CUSTOMER.forEach(citem=>{
+        citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{
+          const chip=document.createElement('span'); chip.className='customer-chip'; chip.textContent=s; cDiv.appendChild(chip);
+        });
+      });
+      card.appendChild(cDiv);
+    }
 
-    // Full view sections
-    if(!basicView){
-      if(emp.AUTHORITIES.length){
-        const aDiv=document.createElement('div'); aDiv.className='authorities';
-        emp.AUTHORITIES.forEach(a=>{ const chip=document.createElement('div'); chip.className='authority-chip'; chip.textContent=a; aDiv.appendChild(chip); });
-        card.appendChild(aDiv);
-      }
-      if(emp.CHILDREN.length){
-        const wrap=document.createElement('div'); wrap.className='children-wrap';
-        emp.CHILDREN.forEach(child=>{
-          if(child['SECONDLINE PERSON'] && child['SECONDLINE PERSON'].startsWith('****')) return;
-          const cb=document.createElement('div'); cb.className='child-block';
-          const ctop=document.createElement('div'); ctop.className='child-top';
-          const resp=document.createElement('div'); resp.className='resp'; resp.textContent=child.RESPONSIBILITIES||'—';
-          const contrib=document.createElement('div'); contrib.className='contrib'; contrib.textContent=child['SALES ACTIVITIES CONTRIBUTION']||'';
-          ctop.append(resp, contrib); cb.appendChild(ctop);
+    // Full view sections
+    if(!basicView){
+      if(emp.AUTHORITIES.length){
+        const aDiv=document.createElement('div'); aDiv.className='authorities';
+        emp.AUTHORITIES.forEach(a=>{ const chip=document.createElement('div'); chip.className='authority-chip'; chip.textContent=a; aDiv.appendChild(chip); });
+        card.appendChild(aDiv);
+      }
+      if(emp.CHILDREN.length){
+        const wrap=document.createElement('div'); wrap.className='children-wrap';
+        emp.CHILDREN.forEach(child=>{
+          if(child['SECONDLINE PERSON'] && child['SECONDLINE PERSON'].startsWith('****')) return;
+          const cb=document.createElement('div'); cb.className='child-block';
+          const ctop=document.createElement('div'); ctop.className='child-top';
+          const resp=document.createElement('div'); resp.className='resp'; resp.textContent=child.RESPONSIBILITIES||'—';
+          const contrib=document.createElement('div'); contrib.className='contrib'; contrib.textContent=child['SALES ACTIVITIES CONTRIBUTION']||'';
+          ctop.append(resp, contrib); cb.appendChild(ctop);
 
-          const secsRaw = (child['SECONDLINE PERSON']||'').split(/[\/,;\|]+/).map(s=>s.trim()).filter(Boolean);
-          if(secsRaw.length){
-            const row=document.createElement('div'); row.className='secondline-row';
-            secsRaw.forEach(sec=>{
-              const m = nameIndex.get((sec||'').toLowerCase());
-              const chip=document.createElement('div'); chip.className='secondline-chip';
-              if(!m){
-                chip.innerHTML = `<img src="https://via.placeholder.com/52?text=?" alt="?"><div><div class="sname">${sec}</div><div class="smeta" style="color:#c23a3a;font-weight:700;font-size:.84rem;">Not found</div></div>`;
-                row.appendChild(chip); return;
-              }
-              const img2=document.createElement('img'); img2.src=m.EMPLOYEE_IMAGE||'https://via.placeholder.com/52?text=No'; img2.alt=m.EMPLOYEE_NAME;
-              attachPreview(img2, m);
-              const txtWrap=document.createElement('div'); txtWrap.style.display='flex'; txtWrap.style.flexDirection='column';
-              const sn=document.createElement('div'); sn.className='sname'; sn.textContent=m.EMPLOYEE_NAME;
-              const scode=document.createElement('div'); scode.className='code'; scode.textContent=m.EMPLOYEE_CODE||'';
-              const sm=document.createElement('div'); sm.className='smeta'; sm.textContent=m.ROLES||'';
-              txtWrap.append(sn, scode, sm);
-              if(m.CUSTOMER && m.CUSTOMER.length){
-                const custWrap=document.createElement('div'); custWrap.style.marginTop='6px';
-                m.CUSTOMER.forEach(citem=>{ citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{ const cchip=document.createElement('span'); cchip.className='customer-chip'; cchip.textContent=s; custWrap.appendChild(cchip); }); });
-                txtWrap.appendChild(custWrap);
-              }
-              chip.append(img2, txtWrap); row.appendChild(chip);
-            });
-            cb.appendChild(row);
-          }
-          wrap.appendChild(cb);
-        });
-        if(wrap.children.length) card.appendChild(wrap);
-      }
-    }
+          const secsRaw = (child['SECONDLINE PERSON']||'').split(/[\/,;\|]+/).map(s=>s.trim()).filter(Boolean);
+          if(secsRaw.length){
+            const row=document.createElement('div'); row.className='secondline-row';
+            secsRaw.forEach(sec=>{
+              const m = nameIndex.get((sec||'').toLowerCase());
+              const chip=document.createElement('div'); chip.className='secondline-chip';
+              if(!m){
+                chip.innerHTML = `<img src="https://via.placeholder.com/52?text=?" alt="?"><div><div class="sname">${sec}</div><div class="smeta" style="color:#c23a3a;font-weight:700;font-size:.84rem;">Not found</div></div>`;
+                row.appendChild(chip); return;
+              }
+              const img2=document.createElement('img'); img2.src=m.EMPLOYEE_IMAGE||'https://via.placeholder.com/52?text=No'; img2.alt=m.EMPLOYEE_NAME;
+              attachPreview(img2, m);
+              const txtWrap=document.createElement('div'); txtWrap.style.display='flex'; txtWrap.style.flexDirection='column';
+              const sn=document.createElement('div'); sn.className='sname'; sn.textContent=m.EMPLOYEE_NAME;
+              const scode=document.createElement('div'); scode.className='code'; scode.textContent=m.EMPLOYEE_CODE||'';
+              const sm=document.createElement('div'); sm.className='smeta'; sm.textContent=m.ROLES||'';
+              txtWrap.append(sn, scode, sm);
+              if(m.CUSTOMER && m.CUSTOMER.length){
+                const custWrap=document.createElement('div'); custWrap.style.marginTop='6px';
+                m.CUSTOMER.forEach(citem=>{ citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{ const cchip=document.createElement('span'); cchip.className='customer-chip'; cchip.textContent=s; custWrap.appendChild(cchip); }); });
+                txtWrap.appendChild(custWrap);
+              }
+              chip.append(img2, txtWrap); row.appendChild(chip);
+            });
+            cb.appendChild(row);
+          }
+          wrap.appendChild(cb);
+        });
+        if(wrap.children.length) card.appendChild(wrap);
+      }
+    }
 
-    contentArea.appendChild(card);
-  });
+    contentArea.appendChild(card);
+  });
 }
 
 // Image hover preview
 function attachPreview(imgEl, emp){
-  imgEl.addEventListener('mouseenter',()=>{ 
-    imgPreviewImg.src=emp.EMPLOYEE_IMAGE||imgEl.src; 
-    imgPreview.style.display='block'; 
-    const rect=imgEl.getBoundingClientRect(); 
-    imgPreview.style.left=Math.min(rect.right+8, window.innerWidth-260)+'px'; 
-    imgPreview.style.top=Math.min(rect.top, window.innerHeight-260)+'px'; 
-    imgPreview.style.opacity='1'; 
-  });
-  imgEl.addEventListener('mouseleave',()=>{ 
-    imgPreview.style.opacity='0'; 
-    setTimeout(()=>{imgPreview.style.display='none';},180); 
-  });
+  imgEl.addEventListener('mouseenter',()=>{ 
+    imgPreviewImg.src=emp.EMPLOYEE_IMAGE||imgEl.src; 
+    imgPreview.style.display='block'; 
+    const rect=imgEl.getBoundingClientRect(); 
+    imgPreview.style.left=Math.min(rect.right+8, window.innerWidth-260)+'px'; 
+    imgPreview.style.top=Math.min(rect.top, window.innerHeight-260)+'px'; 
+    imgPreview.style.opacity='1'; 
+  });
+  imgEl.addEventListener('mouseleave',()=>{ 
+    imgPreview.style.opacity='0'; 
+    setTimeout(()=>{imgPreview.style.display='none';},180); 
+  });
 }
 
 filterInput.addEventListener('input',()=>render());
@@ -298,5 +332,3 @@ loadJSON();
 </script>
 </body>
 </html>
-
-
