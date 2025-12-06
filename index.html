@@ -83,7 +83,7 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
 
 /* --- New Image Modal Styles --- */
 #imageModal {
-    display: none; 
+    display: none; /* Key: Ensure it starts hidden */
     position: fixed; 
     z-index: 5000; 
     left: 0;
@@ -91,7 +91,6 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
     width: 100%; 
     height: 100%; 
     background-color: rgba(0,0,0,0.85); 
-    display: flex; 
     align-items: center;
     justify-content: center;
     pointer-events: none; 
@@ -224,7 +223,8 @@ clearContribBtn.onclick = ()=>{ activeContrib=[]; updateUI(); render(); };
 // Function to close the modal
 function closeModal() {
     imageModal.classList.remove('visible');
-    imageModal.style.display = 'none';
+    // Ensure display: none is explicitly set
+    imageModal.style.display = 'none'; 
 }
 
 // Close modal on click outside content or mouse leave from the modal itself
@@ -403,13 +403,24 @@ function render(){
   visible.forEach(emp=>{
     const card=document.createElement('div'); card.className='employee-card';
     const top=document.createElement('div'); top.className='employee-top';
-    const img=document.createElement('img'); img.src=emp.EMPLOYEE_IMAGE||'https://via.placeholder.com/90?text=No'; img.alt=emp.EMPLOYEE_NAME;
-    attachPreview(img, emp); 
+    
+    const imgURL = emp.EMPLOYEE_IMAGE;
+
+    // 1. MAIN EMPLOYEE IMAGE: Only create image element if URL exists
+    if (imgURL) {
+        const img = document.createElement('img'); 
+        img.src = imgURL; 
+        img.alt = emp.EMPLOYEE_NAME;
+        attachPreview(img, emp); 
+        top.append(img); // Append image
+    }
+
     const meta=document.createElement('div'); meta.className='meta';
     
-    // REMOVED: Department from display
+    // Append image metadata (name, code, role)
     meta.innerHTML = `<h3>${emp.EMPLOYEE_NAME}</h3><div class="code">${emp.EMPLOYEE_CODE||''}</div><small>${emp.ROLES||''}</small>`; 
-    top.append(img, meta); card.appendChild(top);
+    top.append(meta); 
+    card.appendChild(top);
 
     if(emp.CUSTOMER.length){
       const cDiv=document.createElement('div'); cDiv.className='customer-follow';
@@ -445,23 +456,29 @@ function render(){
             secsRaw.forEach(sec=>{
               const m = nameIndex.get((sec||'').toLowerCase());
               const chip=document.createElement('div'); chip.className='secondline-chip';
-              if(!m){
-                chip.innerHTML = `<img src="https://via.placeholder.com/52?text=?" alt="?"><div><div class="sname">${sec}</div><div class="smeta" style="color:#c23a3a;font-weight:700;font-size:.84rem;">Not found</div></div>`;
+              
+                if(!m || !m.EMPLOYEE_IMAGE){
+                    // If no match OR no image URL, use a placeholder chip without an image
+                    chip.innerHTML = `<div><div class="sname">${sec}</div><div class="smeta" style="color:#c23a3a;font-weight:700;font-size:.84rem;">(No image/data found)</div></div>`;
               } else {
-                const img2=document.createElement('img'); img2.src=m.EMPLOYEE_IMAGE||'https://via.placeholder.com/52?text=No'; img2.alt=m.EMPLOYEE_NAME;
-                attachPreview(img2, m); 
-                const txtWrap=document.createElement('div'); txtWrap.style.display='flex'; txtWrap.style.flexDirection='column';
-                const sn=document.createElement('div'); sn.className='sname'; sn.textContent=m.EMPLOYEE_NAME;
-                const scode=document.createElement('div'); scode.className='code'; scode.textContent=m.EMPLOYEE_CODE||'';
-                // REMOVED: Department from second line display
-                const sm=document.createElement('div'); sm.className='smeta'; sm.textContent=m.ROLES||'';
-                txtWrap.append(sn, scode, sm);
-                if(m.CUSTOMER && m.CUSTOMER.length){
-                  const custWrap=document.createElement('div'); custWrap.style.marginTop='6px';
-                  m.CUSTOMER.forEach(citem=>{ citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{ const cchip=document.createElement('span'); cchip.className='customer-chip'; cchip.textContent=s; custWrap.appendChild(cchip); }); });
-                  txtWrap.appendChild(custWrap);
-                }
-                chip.append(img2, txtWrap);
+                    // 2. SECOND-LINE EMPLOYEE IMAGE: Only create image element if URL exists
+                   const img2=document.createElement('img'); 
+                    img2.src=m.EMPLOYEE_IMAGE; 
+                    img2.alt=m.EMPLOYEE_NAME;
+                   attachPreview(img2, m); 
+                   
+                    const txtWrap=document.createElement('div'); txtWrap.style.display='flex'; txtWrap.style.flexDirection='column';
+                   const sn=document.createElement('div'); sn.className='sname'; sn.textContent=m.EMPLOYEE_NAME;
+                   const scode=document.createElement('div'); scode.className='code'; scode.textContent=m.EMPLOYEE_CODE||'';
+                   const sm=document.createElement('div'); sm.className='smeta'; sm.textContent=m.ROLES||'';
+                   txtWrap.append(sn, scode, sm);
+                   
+                    if(m.CUSTOMER && m.CUSTOMER.length){
+                     const custWrap=document.createElement('div'); custWrap.style.marginTop='6px';
+                     m.CUSTOMER.forEach(citem=>{ citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{ const cchip=document.createElement('span'); cchip.className='customer-chip'; cchip.textContent=s; custWrap.appendChild(cchip); }); });
+                     txtWrap.appendChild(custWrap);
+                   }
+                   chip.append(img2, txtWrap);
               }
               row.appendChild(chip);
             });
@@ -485,12 +502,12 @@ function attachPreview(imgEl, emp){
         clearTimeout(hoverTimer);
 
         // Update the image source immediately so it's ready when the timer finishes
-        modalContent.src = emp.EMPLOYEE_IMAGE || imgEl.src;
+        modalContent.src = imgEl.src;
 
         // Set a new timer
         hoverTimer = setTimeout(() => {
-            // Only show the modal if the mouse is still over the element (or if it immediately moved to the modal)
-            if (document.activeElement === imgEl || imgEl.matches(':hover')) {
+            // ONLY show the modal if the mouse is *still* over the element after the delay
+            if (imgEl.matches(':hover')) {
                 imageModal.classList.add('visible');
                 imageModal.style.display = 'flex';
             }
@@ -504,19 +521,16 @@ function attachPreview(imgEl, emp){
         
         // Hide the modal immediately when leaving the small image, 
         // UNLESS the mouse immediately entered the large modal image area.
-        // The modalContent.addEventListener('mouseleave', closeModal) handles the main closing mechanism now.
-        
-        // Check if the cursor moves directly from the small image to the large modal image.
-        // We use a small delay here to allow the mouse to bridge the gap if any, 
-        // but the main closing is now handled by modalContent:mouseleave.
         setTimeout(() => {
-            // Check if the cursor is neither on the small image nor the large modal image
             if (!imgEl.matches(':hover') && !modalContent.matches(':hover')) {
                 closeModal();
             }
         }, 50); // 50ms buffer
     });
 }
+
+// FINAL CHANGE: Ensure modal is hidden immediately upon script execution/load
+document.addEventListener('DOMContentLoaded', closeModal); 
 
 filterInput.addEventListener('input',()=>{ updateUI(); render(); });
 loadJSON();
