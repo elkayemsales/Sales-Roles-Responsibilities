@@ -6,7 +6,7 @@
 <title>Sales Team Roles & Responsibilities</title>
 <link rel="icon" type="image/x-icon" href="favicon.png">
 <style>
-/* ... (CSS remains the same) ... */
+/* ... (Existing CSS remains the same) ... */
 * { box-sizing:border-box; margin:0; padding:0; }
 body, html { font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif; background:#fff9f4; color:#4b433b; }
 
@@ -82,7 +82,7 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
     background: #e9e5de; cursor: not-allowed; 
 }
 
-/* --- New Image Modal Styles --- */
+/* --- Image Modal Styles --- */
 #imageModal {
     display: none; 
     position: fixed; 
@@ -100,8 +100,6 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
     display: flex;
     pointer-events: auto; 
 }
-
-/* IMAGE STYLE 3: Modal Image */
 #modalContent {
     width: 90%;
     max-width: 700px;
@@ -112,6 +110,75 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
     background: #fff; 
     pointer-events: auto; 
 }
+
+/* --- NEW PDF Viewer Modal Styles --- */
+#pdfModal {
+    display: none;
+    position: fixed;
+    z-index: 6000; /* Higher than image modal */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    align-items: center;
+    justify-content: center;
+}
+#pdfModal.visible {
+    display: flex;
+}
+#pdfContent {
+    width: 90%;
+    height: 90%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+#pdfHeader {
+    padding: 12px 20px;
+    background: #6b5e4a;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+#pdfCloseBtn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 5px;
+}
+#pdfViewer {
+    flex-grow: 1;
+    width: 100%;
+    border: none;
+}
+
+/* R&R Button Style (for consistency) */
+.rr-toggle-btn {
+    background: #d9b65b; /* A prominent theme color */
+    color: #fff9f4;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    display: inline-block;
+    transition: background-color 0.2s;
+}
+.rr-toggle-btn:hover {
+    background: #c7a44f;
+}
+
 </style>
 </head>
 <body>
@@ -120,41 +187,51 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
 <button id="sidebarToggleBtn">☰</button>
 
 <aside id="sidebar">
-  <input id="filterInput" type="search" placeholder="Search name, code, dept, customer...">
-  <button id="clearFilterBtn" disabled>Clear ALL filters</button>
-  
-  <div class="filter-block">
-    <div class="filter-header">
-      <h2>Filter by Customer (Multi-Select)</h2>
-      <button id="clearCustomerBtn" class="clear-individual-btn" disabled>❌</button>
-    </div>
-    <div id="customerFilters"></div>
-  </div>
-  
-  <div class="filter-block">
-    <div class="filter-header">
-      <h2>Filter by Role (Single-Select) </h2>
-      <button id="clearRoleBtn" class="clear-individual-btn" disabled>❌</button>
-    </div>
-    <div id="roleFilters"></div>
-  </div>
-  
-  <div class="filter-block">
-    <div class="filter-header">
-      <h2>Filter by Contribution (Multi-Select)</h2>
-      <button id="clearContribBtn" class="clear-individual-btn" disabled>❌</button>
-    </div>
-    <div id="contribFilters"></div>
-  </div>
+  <input id="filterInput" type="search" placeholder="Search name, code, dept, customer...">
+  <button id="clearFilterBtn" disabled>Clear ALL filters</button>
+  
+  <div class="filter-block">
+    <div class="filter-header">
+      <h2>Filter by Customer (Multi-Select)</h2>
+      <button id="clearCustomerBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
+    <div id="customerFilters"></div>
+  </div>
+  
+  <div class="filter-block">
+    <div class="filter-header">
+      <h2>Filter by Role (Single-Select) </h2>
+      <button id="clearRoleBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
+    <div id="roleFilters"></div>
+  </div>
+  
+  <div class="filter-block">
+    <div class="filter-header">
+      <h2>Filter by Contribution (Multi-Select)</h2>
+      <button id="clearContribBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
+    <div id="contribFilters"></div>
+  </div>
 </aside>
 
 <main id="main">
-  <h1>Sales Team Roles & Responsibilities</h1>
-  <div id="contentArea"></div>
+  <h1>Sales Team Roles & Responsibilities</h1>
+  <div id="contentArea"></div>
 </main>
 
 <div id="imageModal">
     <img id="modalContent" alt="Employee Photo">
+</div>
+
+<div id="pdfModal">
+    <div id="pdfContent">
+        <div id="pdfHeader">
+            <span id="pdfTitle">Roles & Responsibilities Document</span>
+            <button id="pdfCloseBtn">&times;</button>
+        </div>
+        <iframe id="pdfViewer" title="R&R Document Viewer"></iframe>
+    </div>
 </div>
 
 <button id="backToTop">Back to Top ↑</button>
@@ -179,42 +256,111 @@ const main = document.getElementById('main');
 const imageModal = document.getElementById('imageModal');
 const modalContent = document.getElementById('modalContent');
 
+// PDF Modal Elements (NEW)
+const pdfModal = document.getElementById('pdfModal');
+const pdfViewer = document.getElementById('pdfViewer');
+const pdfTitle = document.getElementById('pdfTitle');
+const pdfCloseBtn = document.getElementById('pdfCloseBtn');
+
+
 let data=[], activeRole=null, activeContrib=[], activeCustomer=[], basicView=true; 
 let nameIndex=new Map();
 
 // --- Global Variable for Hover Delay ---
 let hoverTimer = null; 
-// KEY CHANGE: Set hover delay to 0.2 seconds (200ms)
 const HOVER_DELAY_MS = 200; 
 
-// --- Event Listeners for Controls ---
+// --- General Modal Handlers ---
 
+function closeImageModal() {
+    imageModal.classList.remove('visible');
+    imageModal.style.display = 'none'; 
+}
+
+function closePdfModal() {
+    pdfModal.classList.remove('visible');
+    pdfModal.style.display = 'none';
+    pdfViewer.src = ''; // Clear the iframe content
+}
+
+// Close image modal on click outside content
+imageModal.addEventListener('click', (e) => {
+    if (e.target === imageModal) {
+        closeImageModal();
+    }
+});
+
+// Close image modal when the mouse leaves the large image
+modalContent.addEventListener('mouseleave', closeImageModal);
+
+// Close PDF modal on backdrop click
+pdfModal.addEventListener('click', (e) => {
+    if (e.target === pdfModal) {
+        closePdfModal();
+    }
+});
+
+// Close PDF modal via button
+pdfCloseBtn.onclick = closePdfModal;
+
+// Close any modal on Escape key press
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        if (imageModal.classList.contains('visible')) {
+            closeImageModal();
+        }
+        if (pdfModal.classList.contains('visible')) {
+            closePdfModal();
+        }
+    }
+});
+
+// --- NEW PDF Viewer Logic ---
+
+function openPdfViewer(employeeCode, employeeName) {
+    // Construct the URL: R&R folder + Employee Code + .pdf extension
+    const pdfUrl = `R&R/${employeeCode}.pdf`; 
+    
+    pdfTitle.textContent = `R&R Document: ${employeeName} (${employeeCode})`;
+    pdfViewer.src = pdfUrl;
+
+    pdfModal.classList.add('visible');
+    pdfModal.style.display = 'flex';
+}
+
+// --- R&R Button Click Handler (Now opens PDF) ---
+function handleRRButtonClick(employeeCode, employeeName) {
+    openPdfViewer(employeeCode, employeeName);
+}
+
+// --- Event Listeners for Controls (existing) ---
 // Sidebar toggle
 sidebarBtn.onclick = ()=>{
-  sidebar.classList.toggle('open'); 
-  main.classList.toggle('shifted');
+  sidebar.classList.toggle('open'); 
+  main.classList.toggle('shifted');
 };
 
 // Back to Top button
 window.addEventListener('scroll',()=>{ backToTop.style.display = window.scrollY>200?'block':'none'; });
 backToTop.onclick = ()=>{ window.scrollTo({ top:0, behavior:'smooth' }); };
 
-// View toggle
+// View toggle (The Expanded view logic is now redundant since R&R is in a popup, 
+// but we keep the toggle button to handle the old inline AUTHORITIES/CHILDREN view if desired)
 viewToggleBtn.onclick = ()=>{
-  basicView = !basicView;
-  viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
-  render();
+  basicView = !basicView;
+  viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
+  render();
 };
 viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
 
 // Clear ALL filters button
 clearBtn.onclick = ()=>{ 
-  activeRole=null; 
-  activeContrib=[]; 
-  activeCustomer=[]; 
-  filterInput.value=''; 
-  updateUI(); 
-  render(); 
+  activeRole=null; 
+  activeContrib=[]; 
+  activeCustomer=[]; 
+  filterInput.value=''; 
+  updateUI(); 
+  render(); 
 };
 
 // Clear Individual Filter buttons
@@ -222,33 +368,8 @@ clearRoleBtn.onclick = ()=>{ activeRole=null; updateUI(); render(); };
 clearCustomerBtn.onclick = ()=>{ activeCustomer=[]; updateUI(); render(); };
 clearContribBtn.onclick = ()=>{ activeContrib=[]; updateUI(); render(); };
 
-// Function to close the modal
-function closeModal() {
-    imageModal.classList.remove('visible');
-    imageModal.style.display = 'none'; 
-}
 
-// Close modal on click outside content or mouse leave from the modal itself
-imageModal.addEventListener('click', (e) => {
-    // Only close if the click target is the modal backdrop itself, not the image content
-    if (e.target === imageModal) {
-        closeModal();
-    }
-});
-
-// Close modal when the mouse leaves the large image (Modal Content)
-modalContent.addEventListener('mouseleave', closeModal);
-
-// Close modal on Escape key press
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && imageModal.classList.contains('visible')) {
-        closeModal();
-    }
-});
-
-// --- Data and Rendering Logic ---
-
-// Define the custom role hierarchy
+// --- Data and Rendering Logic (existing functions) ---
 const customRoleOrder = {
   'HEAD OF THE DEPARTMENT': 1,
   'SR.OFFICER': 2,
@@ -258,153 +379,145 @@ const customRoleOrder = {
   'AD.OPERATOR': 6,
   'AD.TRAINEE': 7
 };
-
-// Load JSON
 async function loadJSON(){
-  const res = await fetch('Data.json');
-  data = await res.json();
-  
-  // --- Custom Sorting Logic ---
-  data.sort((a, b) => {
-    const roleA = (a.ROLES || '').toUpperCase();
-    const roleB = (b.ROLES || '').toUpperCase();
-    const rankA = customRoleOrder[roleA] || 999;
-    const rankB = customRoleOrder[roleB] || 999;
+  const res = await fetch('Data.json');
+  data = await res.json();
+  // ... (Custom Sorting Logic remains the same) ...
+  data.sort((a, b) => {
+    const roleA = (a.ROLES || '').toUpperCase();
+    const roleB = (b.ROLES || '').toUpperCase();
+    const rankA = customRoleOrder[roleA] || 999;
+    const rankB = customRoleOrder[roleB] || 999;
 
-    if (rankA !== rankB) {
-      return rankA - rankB;
-    }
+    if (rankA !== rankB) {
+      return rankA - rankB;
+    }
 
-    const codeA = (a.EMPLOYEE_CODE || '').toUpperCase();
-    const codeB = (b.EMPLOYEE_CODE || '').toUpperCase();
-    if (codeA < codeB) return -1;
-    if (codeA > codeB) return 1;
-    
-    return 0;
-  });
+    const codeA = (a.EMPLOYEE_CODE || '').toUpperCase();
+    const codeB = (b.EMPLOYEE_CODE || '').toUpperCase();
+    if (codeA < codeB) return -1;
+    if (codeA > codeB) return 1;
+    
+    return 0;
+  });
 
-  data.forEach(d=>{
-    if(!Array.isArray(d.AUTHORITIES)) d.AUTHORITIES = d.AUTHORITIES ? [d.AUTHORITIES] : [];
-    if(!Array.isArray(d.CHILDREN)) d.CHILDREN = d.CHILDREN||[];
-    if(!Array.isArray(d.CUSTOMER)) d.CUSTOMER = d.CUSTOMER ? (Array.isArray(d.CUSTOMER)?d.CUSTOMER:[d.CUSTOMER]) : [];
-    nameIndex.set((d.EMPLOYEE_NAME||'').toLowerCase(), d);
-  });
-  buildFilters();
-  render();
+  data.forEach(d=>{
+    if(!Array.isArray(d.AUTHORITIES)) d.AUTHORITIES = d.AUTHORITIES ? [d.AUTHORITIES] : [];
+    if(!Array.isArray(d.CHILDREN)) d.CHILDREN = d.CHILDREN||[];
+    if(!Array.isArray(d.CUSTOMER)) d.CUSTOMER = d.CUSTOMER ? (Array.isArray(d.CUSTOMER)?d.CUSTOMER:[d.CUSTOMER]) : [];
+    nameIndex.set((d.EMPLOYEE_NAME||'').toLowerCase(), d);
+  });
+  buildFilters();
+  render();
 }
-
-// Build filters dynamically
 function buildFilters(){
-  // Roles (Single Select)
-  const roles=[...new Set(data.map(d=>d.ROLES).filter(Boolean))];
-  roleFiltersDiv.innerHTML='';
-  roles.forEach(r=>{
-    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=r;
-    b.onclick=()=>{ activeRole = activeRole===r?null:r; updateUI(); render(); };
-    roleFiltersDiv.appendChild(b);
-  });
+  // ... (Build filters logic remains the same) ...
+  // Roles (Single Select)
+  const roles=[...new Set(data.map(d=>d.ROLES).filter(Boolean))];
+  roleFiltersDiv.innerHTML='';
+  roles.forEach(r=>{
+    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=r;
+    b.onclick=()=>{ activeRole = activeRole===r?null:r; updateUI(); render(); };
+    roleFiltersDiv.appendChild(b);
+  });
 
-  // Contribution (Multi Select)
-  const contribs=[...new Set(data.flatMap(d=>d.CHILDREN.map(c=>c['SALES ACTIVITIES CONTRIBUTION']).filter(Boolean)))];
-  contribFiltersDiv.innerHTML='';
-  contribs.forEach(c=>{
-    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
-    b.onclick=()=>{ 
-      toggleSelection(activeContrib, c);
-      updateUI(); 
-      render(); 
-    };
-    contribFiltersDiv.appendChild(b);
-  });
+  // Contribution (Multi Select)
+  const contribs=[...new Set(data.flatMap(d=>d.CHILDREN.map(c=>c['SALES ACTIVITIES CONTRIBUTION']).filter(Boolean)))];
+  contribFiltersDiv.innerHTML='';
+  contribs.forEach(c=>{
+    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
+    b.onclick=()=>{ 
+      toggleSelection(activeContrib, c);
+      updateUI(); 
+      render(); 
+    };
+    contribFiltersDiv.appendChild(b);
+  });
 
-  // Customers (Multi Select)
-  const custSet=new Set();
-  data.forEach(d=>{
-    d.CUSTOMER.forEach(c=>{
-      c.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>custSet.add(s));
-    });
-  });
-  customerFiltersDiv.innerHTML='';
-  Array.from(custSet).sort().forEach(c=>{
-    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
-    b.onclick=()=>{ 
-      toggleSelection(activeCustomer, c);
-      updateUI(); 
-      render(); 
-    };
-    customerFiltersDiv.appendChild(b);
-  });
+  // Customers (Multi Select)
+  const custSet=new Set();
+  data.forEach(d=>{
+    d.CUSTOMER.forEach(c=>{
+      c.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>custSet.add(s));
+    });
+  });
+  customerFiltersDiv.innerHTML='';
+  Array.from(custSet).sort().forEach(c=>{
+    const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
+    b.onclick=()=>{ 
+      toggleSelection(activeCustomer, c);
+      updateUI(); 
+      render(); 
+    };
+    customerFiltersDiv.appendChild(b);
+  });
 
-  updateUI();
+  updateUI();
 }
-
-// Helper function for array toggling
 function toggleSelection(arr, item) {
-  const index = arr.indexOf(item);
-  if (index > -1) {
-    arr.splice(index, 1);
-  } else {
-    arr.push(item);
-  }
+  const index = arr.indexOf(item);
+  if (index > -1) {
+    arr.splice(index, 1);
+  } else {
+    arr.push(item);
+  }
 }
-
-// Update UI active classes and button states
 function updateUI(){
-  // Update filter button visual states
-  [...roleFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeRole));
-  [...contribFiltersDiv.children].forEach(b=>b.classList.toggle('active', activeContrib.includes(b.textContent)));
-  [...customerFiltersDiv.children].forEach(b=>b.classList.toggle('active', activeCustomer.includes(b.textContent)));
-  
-  // Update individual clear button states
-  clearRoleBtn.disabled = !activeRole;
-  clearCustomerBtn.disabled = activeCustomer.length === 0;
-  clearContribBtn.disabled = activeContrib.length === 0;
+  // ... (Update UI logic remains the same) ...
+  // Update filter button visual states
+  [...roleFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeRole));
+  [...contribFiltersDiv.children].forEach(b=>b.classList.toggle('active', activeContrib.includes(b.textContent)));
+  [...customerFiltersDiv.children].forEach(b=>b.classList.toggle('active', activeCustomer.includes(b.textContent)));
+  
+  // Update individual clear button states
+  clearRoleBtn.disabled = !activeRole;
+  clearCustomerBtn.disabled = activeCustomer.length === 0;
+  clearContribBtn.disabled = activeContrib.length === 0;
 
-  // Update 'Clear ALL' button state
-  const isFilterActive = activeRole || activeCustomer.length > 0 || activeContrib.length > 0 || filterInput.value.trim().length > 0;
-  clearBtn.disabled = !isFilterActive;
+  // Update 'Clear ALL' button state
+  const isFilterActive = activeRole || activeCustomer.length > 0 || activeContrib.length > 0 || filterInput.value.trim().length > 0;
+  clearBtn.disabled = !isFilterActive;
 }
 
-// Render employee cards
+// --- RENDER FUNCTION (MODIFIED) ---
 function render(){
-  const q = filterInput.value.trim().toLowerCase();
-  let visible = data.slice();
-  
-  // Apply filters...
-  if(activeRole) visible = visible.filter(d=>d.ROLES===activeRole);
-  
-  // Filter by contribution: Must match at least one selected contribution in CHILDREN array
-  if(activeContrib.length > 0) {
-    visible = visible.filter(d => 
-      d.CHILDREN.some(c => activeContrib.includes(c['SALES ACTIVITIES CONTRIBUTION']))
-    );
-  }
-  
-  if(activeCustomer.length > 0) {
-    visible = visible.filter(d => 
-      d.CUSTOMER.some(citem => 
-        citem.split(/[\/,;\|]+/).map(x => x.trim())
-        .some(cName => activeCustomer.includes(cName))
-      )
-    );
-  }
-  
-  // Apply text search filter
-  if(q) visible = visible.filter(d=>{
-    const top = (d.EMPLOYEE_NAME+' '+d.EMPLOYEE_CODE+' '+d.ROLES+' '+(d.DEPARTMENT||'')).toLowerCase();
-    const auth = d.AUTHORITIES.some(a=>a.toLowerCase().includes(q));
-    const child = d.CHILDREN.some(c=>((c.RESPONSIBILITIES||'')+' '+(c['SALES ACTIVITIES CONTRIBUTION']||'')).toLowerCase().includes(q));
-    const cust = d.CUSTOMER.some(c=>c.toLowerCase().includes(q));
-    return top.includes(q)||auth||child||cust;
-  });
+  const q = filterInput.value.trim().toLowerCase();
+  let visible = data.slice();
+  
+  // Apply filters... (Filter logic remains the same)
+  if(activeRole) visible = visible.filter(d=>d.ROLES===activeRole);
+  
+  if(activeContrib.length > 0) {
+    visible = visible.filter(d => 
+      d.CHILDREN.some(c => activeContrib.includes(c['SALES ACTIVITIES CONTRIBUTION']))
+    );
+  }
+  
+  if(activeCustomer.length > 0) {
+    visible = visible.filter(d => 
+      d.CUSTOMER.some(citem => 
+        citem.split(/[\/,;\|]+/).map(x => x.trim())
+        .some(cName => activeCustomer.includes(cName))
+      )
+    );
+  }
+  
+  // Apply text search filter
+  if(q) visible = visible.filter(d=>{
+    const top = (d.EMPLOYEE_NAME+' '+d.EMPLOYEE_CODE+' '+d.ROLES+' '+(d.DEPARTMENT||'')).toLowerCase();
+    const auth = d.AUTHORITIES.some(a=>a.toLowerCase().includes(q));
+    const child = d.CHILDREN.some(c=>((c.RESPONSIBILITIES||'')+' '+(c['SALES ACTIVITIES CONTRIBUTION']||'')).toLowerCase().includes(q));
+    const cust = d.CUSTOMER.some(c=>c.toLowerCase().includes(q));
+    return top.includes(q)||auth||child||cust;
+  });
 
-  contentArea.innerHTML='';
-  if(!visible.length){ contentArea.innerHTML='<p>No matching records found.</p>'; return; }
+  contentArea.innerHTML='';
+  if(!visible.length){ contentArea.innerHTML='<p>No matching records found.</p>'; return; }
 
-  visible.forEach(emp=>{
-    const card=document.createElement('div'); card.className='employee-card';
-    const top=document.createElement('div'); top.className='employee-top';
-    
+  visible.forEach(emp=>{
+    const card=document.createElement('div'); card.className='employee-card';
+    const top=document.createElement('div'); top.className='employee-top';
+    
     const imgURL = emp.EMPLOYEE_IMAGE;
 
     // 1. MAIN EMPLOYEE IMAGE: Only create image element if URL exists
@@ -413,100 +526,110 @@ function render(){
         img.src = imgURL; 
         img.alt = emp.EMPLOYEE_NAME;
         attachPreview(img, emp); 
-        top.append(img); // Append image
+        top.append(img); 
     }
 
-    const meta=document.createElement('div'); meta.className='meta';
+    const meta=document.createElement('div'); meta.className='meta';
     
     // Append image metadata (name, code, role)
-    meta.innerHTML = `<h3>${emp.EMPLOYEE_NAME}</h3><div class="code">${emp.EMPLOYEE_CODE||''}</div><small>${emp.ROLES||''}</small>`; 
-    top.append(meta); 
+    meta.innerHTML = `<h3>${emp.EMPLOYEE_NAME}</h3><div class="code">${emp.EMPLOYEE_CODE||''}</div><small>${emp.ROLES||''}</small>`; 
+    top.append(meta); 
     card.appendChild(top);
 
-    if(emp.CUSTOMER.length){
-      const cDiv=document.createElement('div'); cDiv.className='customer-follow';
-      cDiv.innerHTML = '<strong>Customer Follow-ups:</strong>';
-      emp.CUSTOMER.forEach(citem=>{
-        citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{
-          const chip=document.createElement('span'); chip.className='customer-chip'; chip.textContent=s; cDiv.appendChild(chip);
-        });
-      });
-      card.appendChild(cDiv);
-    }
+    if(emp.CUSTOMER.length){
+      const cDiv=document.createElement('div'); cDiv.className='customer-follow';
+      cDiv.innerHTML = '<strong>Customer Follow-ups:</strong>';
+      emp.CUSTOMER.forEach(citem=>{
+        citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{
+          const chip=document.createElement('span'); chip.className='customer-chip'; chip.textContent=s; cDiv.appendChild(chip);
+        });
+      });
+      card.appendChild(cDiv);
+    }
+    
+    // --- NEW R&R Button (Triggers PDF) ---
+    // The button remains, but the click handler is updated
+    const hasDetails = emp.AUTHORITIES.length > 0 || emp.CHILDREN.length > 0;
+    if (hasDetails) {
+        const rrBtn = document.createElement('button');
+        rrBtn.id = `rr-button-${emp.EMPLOYEE_CODE}`;
+        rrBtn.className = 'rr-toggle-btn';
+        rrBtn.textContent = 'R&R';
+        // *** NEW CLICK HANDLER: Open PDF Viewer ***
+        rrBtn.onclick = () => handleRRButtonClick(emp.EMPLOYEE_CODE, emp.EMPLOYEE_NAME);
+        card.appendChild(rrBtn);
+    }
+    
+    // --- Full view sections (Only shown when basicView is false) ---
+    // We keep this legacy section for the "Expanded" view toggle, but it only shows authorities and children details inline.
+    if(!basicView){
+      if(emp.AUTHORITIES.length){
+        const aDiv=document.createElement('div'); aDiv.className='authorities';
+        emp.AUTHORITIES.forEach(a=>{ const chip=document.createElement('div'); chip.className='authority-chip'; chip.textContent=a; aDiv.appendChild(chip); });
+        card.appendChild(aDiv);
+      }
+      if(emp.CHILDREN.length){
+        const wrap=document.createElement('div'); wrap.className='children-wrap';
+        emp.CHILDREN.forEach(child=>{
+          if(child['SECONDLINE PERSON'] && child['SECONDLINE PERSON'].startsWith('****')) return;
+          const cb=document.createElement('div'); cb.className='child-block';
+          const ctop=document.createElement('div'); ctop.className='child-top';
+          const resp=document.createElement('div'); resp.className='resp'; resp.textContent=child.RESPONSIBILITIES||'—';
+          const contrib=document.createElement('div'); contrib.className='contrib'; contrib.textContent=child['SALES ACTIVITIES CONTRIBUTION']||'';
+          ctop.append(resp, contrib); cb.appendChild(ctop);
 
-    // Full view sections (Only shown when basicView is false)
-    if(!basicView){
-      if(emp.AUTHORITIES.length){
-        const aDiv=document.createElement('div'); aDiv.className='authorities';
-        emp.AUTHORITIES.forEach(a=>{ const chip=document.createElement('div'); chip.className='authority-chip'; chip.textContent=a; aDiv.appendChild(chip); });
-        card.appendChild(aDiv);
-      }
-      if(emp.CHILDREN.length){
-        const wrap=document.createElement('div'); wrap.className='children-wrap';
-        emp.CHILDREN.forEach(child=>{
-          if(child['SECONDLINE PERSON'] && child['SECONDLINE PERSON'].startsWith('****')) return;
-          const cb=document.createElement('div'); cb.className='child-block';
-          const ctop=document.createElement('div'); ctop.className='child-top';
-          const resp=document.createElement('div'); resp.className='resp'; resp.textContent=child.RESPONSIBILITIES||'—';
-          const contrib=document.createElement('div'); contrib.className='contrib'; contrib.textContent=child['SALES ACTIVITIES CONTRIBUTION']||'';
-          ctop.append(resp, contrib); cb.appendChild(ctop);
-
-          const secsRaw = (child['SECONDLINE PERSON']||'').split(/[\/,;\|]+/).map(s=>s.trim()).filter(Boolean);
-          if(secsRaw.length){
-            const row=document.createElement('div'); row.className='secondline-row';
-            secsRaw.forEach(sec=>{
-              const m = nameIndex.get((sec||'').toLowerCase());
-              const chip=document.createElement('div'); chip.className='secondline-chip';
-              
+          const secsRaw = (child['SECONDLINE PERSON']||'').split(/[\/,;\|]+/).map(s=>s.trim()).filter(Boolean);
+          if(secsRaw.length){
+            const row=document.createElement('div'); row.className='secondline-row';
+            secsRaw.forEach(sec=>{
+              const m = nameIndex.get((sec||'').toLowerCase());
+              const chip=document.createElement('div'); chip.className='secondline-chip';
+              
                 if(!m || !m.EMPLOYEE_IMAGE){
                     // If no match OR no image URL, use a placeholder chip without an image
-                    chip.innerHTML = `<div><div class="sname">${sec}</div><div class="smeta" style="color:#c23a3a;font-weight:700;font-size:.84rem;">(No image/data found)</div></div>`;
-              } else {
+                    chip.innerHTML = `<div><div class="sname">${sec}</div><div class="smeta" style="color:#c23a3a;font-weight:700;font-size:.84rem;">(No image/data found)</div></div>`;
+              } else {
                     // 2. SECOND-LINE EMPLOYEE IMAGE: Only create image element if URL exists
-                   const img2=document.createElement('img'); 
+                    const img2=document.createElement('img'); 
                     img2.src=m.EMPLOYEE_IMAGE; 
                     img2.alt=m.EMPLOYEE_NAME;
-                   attachPreview(img2, m); 
-                   
+                    attachPreview(img2, m); 
+                    
                     const txtWrap=document.createElement('div'); txtWrap.style.display='flex'; txtWrap.style.flexDirection='column';
-                   const sn=document.createElement('div'); sn.className='sname'; sn.textContent=m.EMPLOYEE_NAME;
-                   const scode=document.createElement('div'); scode.className='code'; scode.textContent=m.EMPLOYEE_CODE||'';
-                   const sm=document.createElement('div'); sm.className='smeta'; sm.textContent=m.ROLES||'';
-                   txtWrap.append(sn, scode, sm);
-                   
+                    const sn=document.createElement('div'); sn.className='sname'; sn.textContent=m.EMPLOYEE_NAME;
+                    const scode=document.createElement('div'); scode.className='code'; scode.textContent=m.EMPLOYEE_CODE||'';
+                    const sm=document.createElement('div'); sm.className='smeta'; sm.textContent=m.ROLES||'';
+                    txtWrap.append(sn, scode, sm);
+                    
                     if(m.CUSTOMER && m.CUSTOMER.length){
-                     const custWrap=document.createElement('div'); custWrap.style.marginTop='6px';
-                     m.CUSTOMER.forEach(citem=>{ citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{ const cchip=document.createElement('span'); cchip.className='customer-chip'; cchip.textContent=s; custWrap.appendChild(cchip); }); });
-                     txtWrap.appendChild(custWrap);
-                   }
-                   chip.append(img2, txtWrap);
-              }
-              row.appendChild(chip);
-            });
-            cb.appendChild(row);
-          }
-          wrap.appendChild(cb);
-        });
-        if(wrap.children.length) card.appendChild(wrap);
-      }
-    }
+                      const custWrap=document.createElement('div'); custWrap.style.marginTop='6px';
+                      m.CUSTOMER.forEach(citem=>{ citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{ const cchip=document.createElement('span'); cchip.className='customer-chip'; cchip.textContent=s; custWrap.appendChild(cchip); }); });
+                      txtWrap.appendChild(custWrap);
+                    }
+                    chip.append(img2, txtWrap);
+              }
+              row.appendChild(chip);
+            });
+            cb.appendChild(row);
+          }
+          wrap.appendChild(cb);
+        });
+        if(wrap.children.length) card.appendChild(wrap);
+      }
+    }
 
-    contentArea.appendChild(card);
-  });
+
+    contentArea.appendChild(card);
+  });
 }
 
-// Image Modal Handler with 200ms delay and solid mouse-out logic
+// Image Modal Handler (existing)
 function attachPreview(imgEl, emp){
     // Mouse Enter (with delay)
-    imgEl.addEventListener('mouseenter', () => { 
+    imgEl.addEventListener('mouseenter', () => { 
         clearTimeout(hoverTimer);
-
-        // Update the image source immediately
         modalContent.src = imgEl.src;
-
-        // Set the timer for the delayed popup
         hoverTimer = setTimeout(() => {
-            // ONLY show the modal if the mouse is *still* over the element after the delay
             if (imgEl.matches(':hover')) {
                 imageModal.classList.add('visible');
                 imageModal.style.display = 'flex';
@@ -516,22 +639,17 @@ function attachPreview(imgEl, emp){
 
     // Mouse Leave (clear delay and close modal)
     imgEl.addEventListener('mouseleave', () => {
-        // 1. Clear the timer (stops delayed opening if mouse leaves early)
         clearTimeout(hoverTimer); 
-        
-        // 2. Check immediately if the mouse moved from the small image to the large modal image.
-        // If the modal is currently visible AND the mouse is NOT over the modal content, close it.
-        // This is the solid fix for the border transition/flickering.
         if (imageModal.classList.contains('visible') && !modalContent.matches(':hover')) {
-            closeModal();
+            closeImageModal();
         }
-        // Note: If modalContent.matches(':hover') is true, the user has successfully moved
-        // onto the large preview, and the modalContent mouseleave handler will close it later.
     });
 }
 
-// Ensure modal is hidden immediately upon script execution/load
-document.addEventListener('DOMContentLoaded', closeModal); 
+document.addEventListener('DOMContentLoaded', ()=>{
+    closeImageModal();
+    closePdfModal(); // Initialize the PDF modal as closed
+}); 
 
 filterInput.addEventListener('input',()=>{ updateUI(); render(); });
 loadJSON();
