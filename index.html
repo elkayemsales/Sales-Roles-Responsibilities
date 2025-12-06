@@ -35,9 +35,9 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
 /* IMAGE STYLE 1: Main Employee Image */
 .employee-top img { 
     width:90px; height:90px; border-radius:12px; 
-    object-fit:cover; /* *** ENSURES CROP TO FIT *** */
+    object-fit:cover; 
     border:3px solid #d7c6a6; background:#f8f4ed; flex-shrink:0; 
-    cursor: pointer; 
+    cursor: pointer; /* Cursor pointer maintained for click */
 }
 .employee-top .meta { display:flex; flex-direction:column; gap:5px; }
 .employee-top h3 { margin:0; font-size:1.15rem; font-weight:700; }
@@ -58,14 +58,14 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
 /* IMAGE STYLE 2: Second-Line Image */
 .secondline-chip img { 
     width:52px; height:52px; border-radius:10px; 
-    object-fit:cover; /* *** ENSURES CROP TO FIT *** */
+    object-fit:cover; 
     border:2px solid #d7c6a6; background:#f7f1e8; 
-    cursor: pointer; 
+    cursor: pointer; /* Cursor pointer maintained for click */
 }
 .sname { font-weight:700; color:#5b4e3d; }
 .smeta { font-size:.84rem; color:#8b7b5a; }
 
-/* --- Filtering UI --- */
+/* --- Filtering UI (unchanged) --- */
 .filter-btn { background:#fef8f3; border:1.6px solid #d7c6a6; padding:8px 10px; border-radius:10px; cursor:pointer; font-weight:600; text-align:left; display:block; margin-bottom:6px; width:100%; }
 .filter-btn.active { background:#b3a17a; color:#fff9f4; border-color:#9b8958; box-shadow:0 4px 10px #9b895822; }
 #clearFilterBtn { background:#f2d1a9; border:0; padding:10px; width:100%; border-radius:10px; font-weight:700; cursor:pointer; margin-bottom:12px; }
@@ -111,11 +111,11 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
     pointer-events: auto; 
 }
 
-/* --- NEW PDF Viewer Modal Styles --- */
+/* --- PDF Viewer Modal Styles (Responsive) --- */
 #pdfModal {
     display: none;
     position: fixed;
-    z-index: 6000; /* Higher than image modal */
+    z-index: 6000; /* Higher than image modal for priority */
     left: 0;
     top: 0;
     width: 100%;
@@ -128,9 +128,9 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
     display: flex;
 }
 #pdfContent {
-    width: 90%;
-    height: 90%;
-    max-width: 1000px;
+    width: 90%; 
+    height: 90%; 
+    max-width: 1000px; 
     background: #fff;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0,0,0,0.7);
@@ -157,14 +157,14 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
     padding: 0 5px;
 }
 #pdfViewer {
-    flex-grow: 1;
+    flex-grow: 1; 
     width: 100%;
     border: none;
 }
 
-/* R&R Button Style (for consistency) */
+/* R&R Button Style */
 .rr-toggle-btn {
-    background: #d9b65b; /* A prominent theme color */
+    background: #d9b65b; 
     color: #fff9f4;
     border: none;
     padding: 8px 12px;
@@ -252,11 +252,9 @@ const backToTop = document.getElementById('backToTop');
 const viewToggleBtn = document.getElementById('viewToggleBtn');
 const main = document.getElementById('main');
 
-// Image Modal Elements
+// Modal Elements
 const imageModal = document.getElementById('imageModal');
 const modalContent = document.getElementById('modalContent');
-
-// PDF Modal Elements (NEW)
 const pdfModal = document.getElementById('pdfModal');
 const pdfViewer = document.getElementById('pdfViewer');
 const pdfTitle = document.getElementById('pdfTitle');
@@ -266,9 +264,9 @@ const pdfCloseBtn = document.getElementById('pdfCloseBtn');
 let data=[], activeRole=null, activeContrib=[], activeCustomer=[], basicView=true; 
 let nameIndex=new Map();
 
-// --- Global Variable for Hover Delay ---
-let hoverTimer = null; 
-const HOVER_DELAY_MS = 200; 
+// --- No hoverTimer needed now that we use click ---
+// let hoverTimer = null; 
+// const HOVER_DELAY_MS = 200; 
 
 // --- General Modal Handlers ---
 
@@ -280,19 +278,18 @@ function closeImageModal() {
 function closePdfModal() {
     pdfModal.classList.remove('visible');
     pdfModal.style.display = 'none';
-    pdfViewer.src = ''; // Clear the iframe content
+    pdfViewer.src = ''; 
 }
 
 // Close image modal on click outside content
 imageModal.addEventListener('click', (e) => {
+    // Only close if the click is on the backdrop, not the image content itself
     if (e.target === imageModal) {
         closeImageModal();
     }
 });
 
-// Close image modal when the mouse leaves the large image
-modalContent.addEventListener('mouseleave', closeImageModal);
-
+// Remove the modalContent.addEventListener('mouseleave') as it's no longer a hover system.
 // Close PDF modal on backdrop click
 pdfModal.addEventListener('click', (e) => {
     if (e.target === pdfModal) {
@@ -315,10 +312,12 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// --- NEW PDF Viewer Logic ---
+// --- PDF Viewer Logic (Priority Setter) ---
 
 function openPdfViewer(employeeCode, employeeName) {
-    // Construct the URL: R&R folder + Employee Code + .pdf extension
+    // Priority Control: Close the image modal explicitly
+    closeImageModal(); 
+    
     const pdfUrl = `R&R/${employeeCode}.pdf`; 
     
     pdfTitle.textContent = `R&R Document: ${employeeName} (${employeeCode})`;
@@ -328,48 +327,33 @@ function openPdfViewer(employeeCode, employeeName) {
     pdfModal.style.display = 'flex';
 }
 
-// --- R&R Button Click Handler (Now opens PDF) ---
+// --- R&R Button Click Handler ---
 function handleRRButtonClick(employeeCode, employeeName) {
     openPdfViewer(employeeCode, employeeName);
 }
 
-// --- Event Listeners for Controls (existing) ---
-// Sidebar toggle
-sidebarBtn.onclick = ()=>{
-  sidebar.classList.toggle('open'); 
-  main.classList.toggle('shifted');
-};
+// --- Image Click Logic (Replaces Hover) ---
+function attachPreview(imgEl, emp){
+    
+    imgEl.addEventListener('click', () => { 
+        // Mutual Exclusion Check: Abort if the higher-priority PDF modal is open.
+        if (pdfModal.classList.contains('visible')) {
+            return;
+        }
 
-// Back to Top button
-window.addEventListener('scroll',()=>{ backToTop.style.display = window.scrollY>200?'block':'none'; });
-backToTop.onclick = ()=>{ window.scrollTo({ top:0, behavior:'smooth' }); };
+        // 1. Set the image source
+        modalContent.src = imgEl.src;
 
-// View toggle (The Expanded view logic is now redundant since R&R is in a popup, 
-// but we keep the toggle button to handle the old inline AUTHORITIES/CHILDREN view if desired)
-viewToggleBtn.onclick = ()=>{
-  basicView = !basicView;
-  viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
-  render();
-};
-viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
+        // 2. Open the image modal immediately
+        imageModal.classList.add('visible');
+        imageModal.style.display = 'flex';
+    });
 
-// Clear ALL filters button
-clearBtn.onclick = ()=>{ 
-  activeRole=null; 
-  activeContrib=[]; 
-  activeCustomer=[]; 
-  filterInput.value=''; 
-  updateUI(); 
-  render(); 
-};
+    // No need for mouseleave handlers anymore
+}
 
-// Clear Individual Filter buttons
-clearRoleBtn.onclick = ()=>{ activeRole=null; updateUI(); render(); };
-clearCustomerBtn.onclick = ()=>{ activeCustomer=[]; updateUI(); render(); };
-clearContribBtn.onclick = ()=>{ activeContrib=[]; updateUI(); render(); };
+// --- Data and Rendering Logic (unchanged from previous debugged version) ---
 
-
-// --- Data and Rendering Logic (existing functions) ---
 const customRoleOrder = {
   'HEAD OF THE DEPARTMENT': 1,
   'SR.OFFICER': 2,
@@ -382,7 +366,6 @@ const customRoleOrder = {
 async function loadJSON(){
   const res = await fetch('Data.json');
   data = await res.json();
-  // ... (Custom Sorting Logic remains the same) ...
   data.sort((a, b) => {
     const roleA = (a.ROLES || '').toUpperCase();
     const roleB = (b.ROLES || '').toUpperCase();
@@ -411,7 +394,6 @@ async function loadJSON(){
   render();
 }
 function buildFilters(){
-  // ... (Build filters logic remains the same) ...
   // Roles (Single Select)
   const roles=[...new Set(data.map(d=>d.ROLES).filter(Boolean))];
   roleFiltersDiv.innerHTML='';
@@ -463,7 +445,6 @@ function toggleSelection(arr, item) {
   }
 }
 function updateUI(){
-  // ... (Update UI logic remains the same) ...
   // Update filter button visual states
   [...roleFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeRole));
   [...contribFiltersDiv.children].forEach(b=>b.classList.toggle('active', activeContrib.includes(b.textContent)));
@@ -478,13 +459,11 @@ function updateUI(){
   const isFilterActive = activeRole || activeCustomer.length > 0 || activeContrib.length > 0 || filterInput.value.trim().length > 0;
   clearBtn.disabled = !isFilterActive;
 }
-
-// --- RENDER FUNCTION (MODIFIED) ---
 function render(){
   const q = filterInput.value.trim().toLowerCase();
   let visible = data.slice();
   
-  // Apply filters... (Filter logic remains the same)
+  // Apply filters...
   if(activeRole) visible = visible.filter(d=>d.ROLES===activeRole);
   
   if(activeContrib.length > 0) {
@@ -520,7 +499,6 @@ function render(){
     
     const imgURL = emp.EMPLOYEE_IMAGE;
 
-    // 1. MAIN EMPLOYEE IMAGE: Only create image element if URL exists
     if (imgURL) {
         const img = document.createElement('img'); 
         img.src = imgURL; 
@@ -531,7 +509,6 @@ function render(){
 
     const meta=document.createElement('div'); meta.className='meta';
     
-    // Append image metadata (name, code, role)
     meta.innerHTML = `<h3>${emp.EMPLOYEE_NAME}</h3><div class="code">${emp.EMPLOYEE_CODE||''}</div><small>${emp.ROLES||''}</small>`; 
     top.append(meta); 
     card.appendChild(top);
@@ -547,21 +524,18 @@ function render(){
       card.appendChild(cDiv);
     }
     
-    // --- NEW R&R Button (Triggers PDF) ---
-    // The button remains, but the click handler is updated
+    // R&R Button 
     const hasDetails = emp.AUTHORITIES.length > 0 || emp.CHILDREN.length > 0;
     if (hasDetails) {
         const rrBtn = document.createElement('button');
         rrBtn.id = `rr-button-${emp.EMPLOYEE_CODE}`;
         rrBtn.className = 'rr-toggle-btn';
         rrBtn.textContent = 'R&R';
-        // *** NEW CLICK HANDLER: Open PDF Viewer ***
         rrBtn.onclick = () => handleRRButtonClick(emp.EMPLOYEE_CODE, emp.EMPLOYEE_NAME);
         card.appendChild(rrBtn);
     }
     
-    // --- Full view sections (Only shown when basicView is false) ---
-    // We keep this legacy section for the "Expanded" view toggle, but it only shows authorities and children details inline.
+    // Full view sections (Only shown when basicView is false)
     if(!basicView){
       if(emp.AUTHORITIES.length){
         const aDiv=document.createElement('div'); aDiv.className='authorities';
@@ -586,10 +560,8 @@ function render(){
               const chip=document.createElement('div'); chip.className='secondline-chip';
               
                 if(!m || !m.EMPLOYEE_IMAGE){
-                    // If no match OR no image URL, use a placeholder chip without an image
                     chip.innerHTML = `<div><div class="sname">${sec}</div><div class="smeta" style="color:#c23a3a;font-weight:700;font-size:.84rem;">(No image/data found)</div></div>`;
               } else {
-                    // 2. SECOND-LINE EMPLOYEE IMAGE: Only create image element if URL exists
                     const img2=document.createElement('img'); 
                     img2.src=m.EMPLOYEE_IMAGE; 
                     img2.alt=m.EMPLOYEE_NAME;
@@ -623,32 +595,35 @@ function render(){
   });
 }
 
-// Image Modal Handler (existing)
-function attachPreview(imgEl, emp){
-    // Mouse Enter (with delay)
-    imgEl.addEventListener('mouseenter', () => { 
-        clearTimeout(hoverTimer);
-        modalContent.src = imgEl.src;
-        hoverTimer = setTimeout(() => {
-            if (imgEl.matches(':hover')) {
-                imageModal.classList.add('visible');
-                imageModal.style.display = 'flex';
-            }
-        }, HOVER_DELAY_MS);
-    });
+// --- Event Listeners (unchanged) ---
+sidebarBtn.onclick = ()=>{
+  sidebar.classList.toggle('open'); 
+  main.classList.toggle('shifted');
+};
+window.addEventListener('scroll',()=>{ backToTop.style.display = window.scrollY>200?'block':'none'; });
+backToTop.onclick = ()=>{ window.scrollTo({ top:0, behavior:'smooth' }); };
+viewToggleBtn.onclick = ()=>{
+  basicView = !basicView;
+  viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
+  render();
+};
+viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
+clearBtn.onclick = ()=>{ 
+  activeRole=null; 
+  activeContrib=[]; 
+  activeCustomer=[]; 
+  filterInput.value=''; 
+  updateUI(); 
+  render(); 
+};
+clearRoleBtn.onclick = ()=>{ activeRole=null; updateUI(); render(); };
+clearCustomerBtn.onclick = ()=>{ activeCustomer=[]; updateUI(); render(); };
+clearContribBtn.onclick = ()=>{ activeContrib=[]; updateUI(); render(); };
 
-    // Mouse Leave (clear delay and close modal)
-    imgEl.addEventListener('mouseleave', () => {
-        clearTimeout(hoverTimer); 
-        if (imageModal.classList.contains('visible') && !modalContent.matches(':hover')) {
-            closeImageModal();
-        }
-    });
-}
 
 document.addEventListener('DOMContentLoaded', ()=>{
     closeImageModal();
-    closePdfModal(); // Initialize the PDF modal as closed
+    closePdfModal(); 
 }); 
 
 filterInput.addEventListener('input',()=>{ updateUI(); render(); });
