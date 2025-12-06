@@ -8,17 +8,36 @@
 <style>
 * { box-sizing:border-box; margin:0; padding:0; }
 body, html { font-family:"Segoe UI",Tahoma,Geneva,Verdana,sans-serif; background:#fff9f4; color:#4b433b; }
+
+/* --- Fixed Controls --- */
 #sidebarToggleBtn { position:fixed; top:16px; right:16px; z-index:1600; padding:12px 16px; border-radius:50px; cursor:pointer; background:#e9dcca; font-weight:700; }
-#sidebar { position:fixed; top:0; left:0; bottom:0; width:320px; max-width:90%; background:#f7efe6; padding:20px; border-right:1px solid #d7c6a6; border-radius:0 10px 10px 0; display:flex; flex-direction:column; gap:12px; transform:translateX(-100%); transition:transform .28s ease; z-index:1500; overflow-y:auto; }
+#viewToggleBtn { position:fixed; top:16px; right:90px; z-index:1600; padding:12px 16px; border-radius:50px; cursor:pointer; background:#d9c6a2; font-weight:700; text-align:center; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+#backToTop { position:fixed; bottom:30px; right:30px; padding:12px 16px; background:#e9dcca; border-radius:50px; cursor:pointer; display:none; z-index:1700; font-weight:700; }
+
+/* --- Sidebar & Main Content --- */
+#sidebar { 
+    position:fixed; top:0; left:0; bottom:0; width:320px; max-width:90%; 
+    background:#f7efe6; padding:20px; border-right:1px solid #d7c6a6; 
+    border-radius:0 10px 10px 0; display:flex; flex-direction:column; 
+    gap:12px; transform:translateX(-100%); transition:transform .28s ease; 
+    z-index:1500; overflow-y:auto; 
+}
 #sidebar.open { transform:translateX(0); }
-.overlay { position:fixed; inset:0; background:rgba(0,0,0,0.28); z-index:1400; display:none; }
-.overlay.visible { display:block; }
+
 #main { padding:28px; transition:margin-left .28s ease; }
 #main.shifted { margin-left:320px; }
 h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
+
+/* --- Card Styling --- */
 .employee-card { background:#f3e9d6; border-radius:14px; padding:18px; margin-bottom:22px; box-shadow:0 3px 10px rgba(107,94,74,0.1); }
 .employee-top { display:flex; gap:16px; align-items:center; }
-.employee-top img { width:90px; height:90px; border-radius:12px; object-fit:cover; border:3px solid #d7c6a6; background:#f8f4ed; flex-shrink:0; }
+/* IMAGE STYLE 1: Main Employee Image */
+.employee-top img { 
+    width:90px; height:90px; border-radius:12px; 
+    object-fit:cover; /* *** ENSURES CROP TO FIT *** */
+    border:3px solid #d7c6a6; background:#f8f4ed; flex-shrink:0; 
+    cursor: pointer; 
+}
 .employee-top .meta { display:flex; flex-direction:column; gap:5px; }
 .employee-top h3 { margin:0; font-size:1.15rem; font-weight:700; }
 .employee-top .code { font-weight:700; font-size:.96rem; }
@@ -35,40 +54,96 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
 .contrib { font-size:.92rem; color:#8b7b5a; font-weight:600; background:#f2e9d3; padding:6px 8px; border-radius:8px; }
 .secondline-row { display:flex; flex-wrap:wrap; gap:12px; margin-top:6px; }
 .secondline-chip { display:flex; align-items:flex-start; gap:10px; background:#fff; border:1px solid #d7c6a6; padding:8px 10px; border-radius:10px; min-width:160px; flex:1 1 auto; flex-direction:row; }
-.secondline-chip img { width:52px; height:52px; border-radius:10px; object-fit:cover; border:2px solid #d7c6a6; background:#f7f1e8; }
+/* IMAGE STYLE 2: Second-Line Image */
+.secondline-chip img { 
+    width:52px; height:52px; border-radius:10px; 
+    object-fit:cover; /* *** ENSURES CROP TO FIT *** */
+    border:2px solid #d7c6a6; background:#f7f1e8; 
+    cursor: pointer; 
+}
 .sname { font-weight:700; color:#5b4e3d; }
 .smeta { font-size:.84rem; color:#8b7b5a; }
-.img-preview { position:fixed; z-index:3000; display:none; padding:6px; background:#fff; border-radius:8px; box-shadow:0 6px 30px rgba(0,0,0,0.25); max-width:240px; max-height:240px; overflow:hidden; transition:opacity .18s ease; }
-.img-preview img { width:100%; height:auto; display:block; border-radius:6px; object-fit:contain; }
+
+/* --- Filtering UI --- */
 .filter-btn { background:#fef8f3; border:1.6px solid #d7c6a6; padding:8px 10px; border-radius:10px; cursor:pointer; font-weight:600; text-align:left; display:block; margin-bottom:6px; width:100%; }
 .filter-btn.active { background:#b3a17a; color:#fff9f4; border-color:#9b8958; box-shadow:0 4px 10px #9b895822; }
 #clearFilterBtn { background:#f2d1a9; border:0; padding:10px; width:100%; border-radius:10px; font-weight:700; cursor:pointer; margin-bottom:12px; }
 #clearFilterBtn:disabled { opacity:0.55; cursor:not-allowed; }
-#backToTop { position:fixed; bottom:30px; right:30px; padding:12px 16px; background:#e9dcca; border-radius:50px; cursor:pointer; display:none; z-index:1700; font-weight:700; }
-#viewToggleBtn { background:#d9c6a2; padding:8px 12px; border-radius:8px; font-weight:700; cursor:pointer; width:100%; margin-bottom:12px; text-align:center; }
 #filterInput { width:100%; padding:10px; border-radius:10px; border:1.6px solid #d7c6a6; margin-bottom:12px; background:#fff4e6; color:#4b433b; }
-.filter-block h2 { font-size:1rem; margin-bottom:6px; color:#6b5e4a; }
+.filter-header { display:flex; justify-content:space-between; align-items:center; margin-bottom:6px; }
+.filter-header h2 { font-size:1rem; color:#6b5e4a; margin:0; }
+.clear-individual-btn { 
+    background: #d7c6a6; color: #fff; border: none; border-radius: 5px; 
+    padding: 2px 6px; font-size: 0.8rem; font-weight: 700; cursor: pointer;
+    line-height: 1; 
+}
+.clear-individual-btn:disabled { 
+    background: #e9e5de; cursor: not-allowed; 
+}
+
+/* --- New Image Modal Styles --- */
+#imageModal {
+    display: none; 
+    position: fixed; 
+    z-index: 5000; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.85); 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    pointer-events: none; 
+}
+#imageModal.visible {
+    display: flex;
+    pointer-events: auto; 
+}
+
+/* IMAGE STYLE 3: Modal Image */
+#modalContent {
+    width: 90%;
+    max-width: 700px;
+    max-height: 90vh; 
+    object-fit: contain; 
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    background: #fff; 
+    pointer-events: auto; 
+}
 </style>
 </head>
 <body>
 
+<button id="viewToggleBtn">🔍 **Basic**</button>
 <button id="sidebarToggleBtn">☰</button>
-<div class="overlay" id="overlay"></div>
 
 <aside id="sidebar">
   <input id="filterInput" type="search" placeholder="Search name, code, dept, customer...">
-  <button id="viewToggleBtn">Switch to Basic View</button>
-  <button id="clearFilterBtn" disabled>Clear filters</button>
+  <button id="clearFilterBtn" disabled>Clear ALL filters</button>
+  
   <div class="filter-block">
-    <h2>Filter by Customer</h2>
+    <div class="filter-header">
+      <h2>Filter by Customer (Multi-Select)</h2>
+      <button id="clearCustomerBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
     <div id="customerFilters"></div>
   </div>
+  
   <div class="filter-block">
-    <h2>Filter by Role</h2>
+    <div class="filter-header">
+      <h2>Filter by Role (Single-Select) </h2>
+      <button id="clearRoleBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
     <div id="roleFilters"></div>
   </div>
+  
   <div class="filter-block">
-    <h2>Filter by Contribution</h2>
+    <div class="filter-header">
+      <h2>Filter by Contribution (Multi-Select)</h2>
+      <button id="clearContribBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
     <div id="contribFilters"></div>
   </div>
 </aside>
@@ -78,43 +153,99 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
   <div id="contentArea"></div>
 </main>
 
-<div class="img-preview" id="imgPreview"><img id="imgPreviewImg"></div>
+<div id="imageModal">
+    <img id="modalContent" alt="Employee Photo">
+</div>
+
 <button id="backToTop">Back to Top ↑</button>
 
 <script>
 const sidebarBtn = document.getElementById('sidebarToggleBtn');
 const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('overlay');
 const contentArea = document.getElementById('contentArea');
 const roleFiltersDiv = document.getElementById('roleFilters');
 const contribFiltersDiv = document.getElementById('contribFilters');
 const customerFiltersDiv = document.getElementById('customerFilters');
 const filterInput = document.getElementById('filterInput');
-const clearBtn = document.getElementById('clearFilterBtn');
-const imgPreview = document.getElementById('imgPreview');
-const imgPreviewImg = document.getElementById('imgPreviewImg');
+const clearBtn = document.getElementById('clearFilterBtn'); 
+const clearRoleBtn = document.getElementById('clearRoleBtn');
+const clearCustomerBtn = document.getElementById('clearCustomerBtn');
+const clearContribBtn = document.getElementById('clearContribBtn');
 const backToTop = document.getElementById('backToTop');
 const viewToggleBtn = document.getElementById('viewToggleBtn');
 const main = document.getElementById('main');
 
-let data=[], activeRole=null, activeContrib=null, activeCustomer=null, basicView=false;
+// Image Modal Elements
+const imageModal = document.getElementById('imageModal');
+const modalContent = document.getElementById('modalContent');
+
+let data=[], activeRole=null, activeContrib=[], activeCustomer=[], basicView=true; 
 let nameIndex=new Map();
+
+// --- Global Variable for Hover Delay ---
+let hoverTimer = null; 
+const HOVER_DELAY_MS = 300; // 0.3 seconds
+
+// --- Event Listeners for Controls ---
 
 // Sidebar toggle
 sidebarBtn.onclick = ()=>{
   sidebar.classList.toggle('open'); 
-  overlay.classList.toggle('visible');
   main.classList.toggle('shifted');
-};
-overlay.onclick = ()=>{
-  sidebar.classList.remove('open'); 
-  overlay.classList.remove('visible'); 
-  main.classList.remove('shifted');
 };
 
 // Back to Top button
 window.addEventListener('scroll',()=>{ backToTop.style.display = window.scrollY>200?'block':'none'; });
 backToTop.onclick = ()=>{ window.scrollTo({ top:0, behavior:'smooth' }); };
+
+// View toggle
+viewToggleBtn.onclick = ()=>{
+  basicView = !basicView;
+  viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
+  render();
+};
+viewToggleBtn.innerHTML = basicView ? '🔍 **Basic**' : '📂 **Expanded**';
+
+// Clear ALL filters button
+clearBtn.onclick = ()=>{ 
+  activeRole=null; 
+  activeContrib=[]; 
+  activeCustomer=[]; 
+  filterInput.value=''; 
+  updateUI(); 
+  render(); 
+};
+
+// Clear Individual Filter buttons
+clearRoleBtn.onclick = ()=>{ activeRole=null; updateUI(); render(); };
+clearCustomerBtn.onclick = ()=>{ activeCustomer=[]; updateUI(); render(); };
+clearContribBtn.onclick = ()=>{ activeContrib=[]; updateUI(); render(); };
+
+// Function to close the modal
+function closeModal() {
+    imageModal.classList.remove('visible');
+    imageModal.style.display = 'none';
+}
+
+// Close modal on click outside content or mouse leave from the modal itself
+imageModal.addEventListener('click', (e) => {
+    // Only close if the click target is the modal backdrop itself, not the image content
+    if (e.target === imageModal) {
+        closeModal();
+    }
+});
+
+// Close modal immediately if the mouse leaves the modal image
+modalContent.addEventListener('mouseleave', closeModal);
+
+// Close modal on Escape key press
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && imageModal.classList.contains('visible')) {
+        closeModal();
+    }
+});
+
+// --- Data and Rendering Logic ---
 
 // Define the custom role hierarchy
 const customRoleOrder = {
@@ -132,20 +263,17 @@ async function loadJSON(){
   const res = await fetch('Data.json');
   data = await res.json();
   
-  // --- START: Custom Sorting Logic ---
+  // --- Custom Sorting Logic ---
   data.sort((a, b) => {
-    // Get custom rank for primary sort
     const roleA = (a.ROLES || '').toUpperCase();
     const roleB = (b.ROLES || '').toUpperCase();
-    const rankA = customRoleOrder[roleA] || 999; // 999 ensures unlisted roles go last
+    const rankA = customRoleOrder[roleA] || 999;
     const rankB = customRoleOrder[roleB] || 999;
 
-    // 1. Sort by custom role rank (Ascending)
     if (rankA !== rankB) {
       return rankA - rankB;
     }
 
-    // 2. Roles are equal, sort by Employee Code (Alphabetically Ascending)
     const codeA = (a.EMPLOYEE_CODE || '').toUpperCase();
     const codeB = (b.EMPLOYEE_CODE || '').toUpperCase();
     if (codeA < codeB) return -1;
@@ -153,13 +281,11 @@ async function loadJSON(){
     
     return 0;
   });
-  // --- END: Custom Sorting Logic ---
 
   data.forEach(d=>{
     if(!Array.isArray(d.AUTHORITIES)) d.AUTHORITIES = d.AUTHORITIES ? [d.AUTHORITIES] : [];
     if(!Array.isArray(d.CHILDREN)) d.CHILDREN = d.CHILDREN||[];
     if(!Array.isArray(d.CUSTOMER)) d.CUSTOMER = d.CUSTOMER ? (Array.isArray(d.CUSTOMER)?d.CUSTOMER:[d.CUSTOMER]) : [];
-    // Normalize for second-line matching
     nameIndex.set((d.EMPLOYEE_NAME||'').toLowerCase(), d);
   });
   buildFilters();
@@ -168,7 +294,7 @@ async function loadJSON(){
 
 // Build filters dynamically
 function buildFilters(){
-  // Roles
+  // Roles (Single Select)
   const roles=[...new Set(data.map(d=>d.ROLES).filter(Boolean))];
   roleFiltersDiv.innerHTML='';
   roles.forEach(r=>{
@@ -177,16 +303,20 @@ function buildFilters(){
     roleFiltersDiv.appendChild(b);
   });
 
-  // Contribution
+  // Contribution (Multi Select)
   const contribs=[...new Set(data.flatMap(d=>d.CHILDREN.map(c=>c['SALES ACTIVITIES CONTRIBUTION']).filter(Boolean)))];
   contribFiltersDiv.innerHTML='';
   contribs.forEach(c=>{
     const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
-    b.onclick=()=>{ activeContrib = activeContrib===c?null:c; updateUI(); render(); };
+    b.onclick=()=>{ 
+      toggleSelection(activeContrib, c);
+      updateUI(); 
+      render(); 
+    };
     contribFiltersDiv.appendChild(b);
   });
 
-  // Customers (split and unique)
+  // Customers (Multi Select)
   const custSet=new Set();
   data.forEach(d=>{
     d.CUSTOMER.forEach(c=>{
@@ -196,36 +326,69 @@ function buildFilters(){
   customerFiltersDiv.innerHTML='';
   Array.from(custSet).sort().forEach(c=>{
     const b=document.createElement('button'); b.className='filter-btn'; b.textContent=c;
-    b.onclick=()=>{ activeCustomer = activeCustomer===c?null:c; updateUI(); render(); };
+    b.onclick=()=>{ 
+      toggleSelection(activeCustomer, c);
+      updateUI(); 
+      render(); 
+    };
     customerFiltersDiv.appendChild(b);
   });
 
   updateUI();
 }
 
-// Update UI active classes
-function updateUI(){
-  [...roleFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeRole));
-  [...contribFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeContrib));
-  [...customerFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeCustomer));
-  clearBtn.disabled = !(activeRole||activeContrib||activeCustomer||filterInput.value.trim().length>0);
+// Helper function for array toggling
+function toggleSelection(arr, item) {
+  const index = arr.indexOf(item);
+  if (index > -1) {
+    arr.splice(index, 1);
+  } else {
+    arr.push(item);
+  }
 }
-clearBtn.onclick = ()=>{ activeRole=activeContrib=activeCustomer=null; filterInput.value=''; updateUI(); render(); };
 
-// Basic/Full view toggle
-viewToggleBtn.onclick = ()=>{
-  basicView = !basicView;
-  viewToggleBtn.textContent = basicView ? 'Switch to Full View' : 'Switch to Basic View';
-  render();
-};
+// Update UI active classes and button states
+function updateUI(){
+  // Update filter button visual states
+  [...roleFiltersDiv.children].forEach(b=>b.classList.toggle('active', b.textContent===activeRole));
+  [...contribFiltersDiv.children].forEach(b=>b.classList.toggle('active', activeContrib.includes(b.textContent)));
+  [...customerFiltersDiv.children].forEach(b=>b.classList.toggle('active', activeCustomer.includes(b.textContent)));
+  
+  // Update individual clear button states
+  clearRoleBtn.disabled = !activeRole;
+  clearCustomerBtn.disabled = activeCustomer.length === 0;
+  clearContribBtn.disabled = activeContrib.length === 0;
+
+  // Update 'Clear ALL' button state
+  const isFilterActive = activeRole || activeCustomer.length > 0 || activeContrib.length > 0 || filterInput.value.trim().length > 0;
+  clearBtn.disabled = !isFilterActive;
+}
 
 // Render employee cards
 function render(){
   const q = filterInput.value.trim().toLowerCase();
   let visible = data.slice();
+  
+  // Apply filters...
   if(activeRole) visible = visible.filter(d=>d.ROLES===activeRole);
-  if(activeContrib) visible = visible.filter(d=>d.CHILDREN.some(c=>c['SALES ACTIVITIES CONTRIBUTION']===activeContrib));
-  if(activeCustomer) visible = visible.filter(d=>d.CUSTOMER.some(c=>c.split(/[\/,;\|]+/).map(x=>x.trim().toLowerCase()).includes(activeCustomer.toLowerCase())));
+  
+  // Filter by contribution: Must match at least one selected contribution in CHILDREN array
+  if(activeContrib.length > 0) {
+    visible = visible.filter(d => 
+      d.CHILDREN.some(c => activeContrib.includes(c['SALES ACTIVITIES CONTRIBUTION']))
+    );
+  }
+  
+  if(activeCustomer.length > 0) {
+    visible = visible.filter(d => 
+      d.CUSTOMER.some(citem => 
+        citem.split(/[\/,;\|]+/).map(x => x.trim())
+        .some(cName => activeCustomer.includes(cName))
+      )
+    );
+  }
+  
+  // Apply text search filter
   if(q) visible = visible.filter(d=>{
     const top = (d.EMPLOYEE_NAME+' '+d.EMPLOYEE_CODE+' '+d.ROLES+' '+(d.DEPARTMENT||'')).toLowerCase();
     const auth = d.AUTHORITIES.some(a=>a.toLowerCase().includes(q));
@@ -241,12 +404,13 @@ function render(){
     const card=document.createElement('div'); card.className='employee-card';
     const top=document.createElement('div'); top.className='employee-top';
     const img=document.createElement('img'); img.src=emp.EMPLOYEE_IMAGE||'https://via.placeholder.com/90?text=No'; img.alt=emp.EMPLOYEE_NAME;
-    attachPreview(img, emp);
+    attachPreview(img, emp); 
     const meta=document.createElement('div'); meta.className='meta';
-    meta.innerHTML = `<h3>${emp.EMPLOYEE_NAME}</h3><div class="code">${emp.EMPLOYEE_CODE||''}</div><small>${emp.ROLES||''}</small><small>Dept: ${emp.DEPARTMENT||'-'}</small>`;
+    
+    // REMOVED: Department from display
+    meta.innerHTML = `<h3>${emp.EMPLOYEE_NAME}</h3><div class="code">${emp.EMPLOYEE_CODE||''}</div><small>${emp.ROLES||''}</small>`; 
     top.append(img, meta); card.appendChild(top);
 
-    // Always show customer in basic and full
     if(emp.CUSTOMER.length){
       const cDiv=document.createElement('div'); cDiv.className='customer-follow';
       cDiv.innerHTML = '<strong>Customer Follow-ups:</strong>';
@@ -258,7 +422,7 @@ function render(){
       card.appendChild(cDiv);
     }
 
-    // Full view sections
+    // Full view sections (Only shown when basicView is false)
     if(!basicView){
       if(emp.AUTHORITIES.length){
         const aDiv=document.createElement('div'); aDiv.className='authorities';
@@ -283,21 +447,23 @@ function render(){
               const chip=document.createElement('div'); chip.className='secondline-chip';
               if(!m){
                 chip.innerHTML = `<img src="https://via.placeholder.com/52?text=?" alt="?"><div><div class="sname">${sec}</div><div class="smeta" style="color:#c23a3a;font-weight:700;font-size:.84rem;">Not found</div></div>`;
-                row.appendChild(chip); return;
+              } else {
+                const img2=document.createElement('img'); img2.src=m.EMPLOYEE_IMAGE||'https://via.placeholder.com/52?text=No'; img2.alt=m.EMPLOYEE_NAME;
+                attachPreview(img2, m); 
+                const txtWrap=document.createElement('div'); txtWrap.style.display='flex'; txtWrap.style.flexDirection='column';
+                const sn=document.createElement('div'); sn.className='sname'; sn.textContent=m.EMPLOYEE_NAME;
+                const scode=document.createElement('div'); scode.className='code'; scode.textContent=m.EMPLOYEE_CODE||'';
+                // REMOVED: Department from second line display
+                const sm=document.createElement('div'); sm.className='smeta'; sm.textContent=m.ROLES||'';
+                txtWrap.append(sn, scode, sm);
+                if(m.CUSTOMER && m.CUSTOMER.length){
+                  const custWrap=document.createElement('div'); custWrap.style.marginTop='6px';
+                  m.CUSTOMER.forEach(citem=>{ citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{ const cchip=document.createElement('span'); cchip.className='customer-chip'; cchip.textContent=s; custWrap.appendChild(cchip); }); });
+                  txtWrap.appendChild(custWrap);
+                }
+                chip.append(img2, txtWrap);
               }
-              const img2=document.createElement('img'); img2.src=m.EMPLOYEE_IMAGE||'https://via.placeholder.com/52?text=No'; img2.alt=m.EMPLOYEE_NAME;
-              attachPreview(img2, m);
-              const txtWrap=document.createElement('div'); txtWrap.style.display='flex'; txtWrap.style.flexDirection='column';
-              const sn=document.createElement('div'); sn.className='sname'; sn.textContent=m.EMPLOYEE_NAME;
-              const scode=document.createElement('div'); scode.className='code'; scode.textContent=m.EMPLOYEE_CODE||'';
-              const sm=document.createElement('div'); sm.className='smeta'; sm.textContent=m.ROLES||'';
-              txtWrap.append(sn, scode, sm);
-              if(m.CUSTOMER && m.CUSTOMER.length){
-                const custWrap=document.createElement('div'); custWrap.style.marginTop='6px';
-                m.CUSTOMER.forEach(citem=>{ citem.split(/[\/,;\|]+/).map(x=>x.trim()).filter(Boolean).forEach(s=>{ const cchip=document.createElement('span'); cchip.className='customer-chip'; cchip.textContent=s; custWrap.appendChild(cchip); }); });
-                txtWrap.appendChild(custWrap);
-              }
-              chip.append(img2, txtWrap); row.appendChild(chip);
+              row.appendChild(chip);
             });
             cb.appendChild(row);
           }
@@ -311,23 +477,48 @@ function render(){
   });
 }
 
-// Image hover preview
+// Image Modal Handler with 300ms delay and instant mouse-out close
 function attachPreview(imgEl, emp){
-  imgEl.addEventListener('mouseenter',()=>{ 
-    imgPreviewImg.src=emp.EMPLOYEE_IMAGE||imgEl.src; 
-    imgPreview.style.display='block'; 
-    const rect=imgEl.getBoundingClientRect(); 
-    imgPreview.style.left=Math.min(rect.right+8, window.innerWidth-260)+'px'; 
-    imgPreview.style.top=Math.min(rect.top, window.innerHeight-260)+'px'; 
-    imgPreview.style.opacity='1'; 
-  });
-  imgEl.addEventListener('mouseleave',()=>{ 
-    imgPreview.style.opacity='0'; 
-    setTimeout(()=>{imgPreview.style.display='none';},180); 
-  });
+    // Mouse Enter (with delay)
+    imgEl.addEventListener('mouseenter', () => { 
+        // Clear any existing timer to prevent multiple popups
+        clearTimeout(hoverTimer);
+
+        // Update the image source immediately so it's ready when the timer finishes
+        modalContent.src = emp.EMPLOYEE_IMAGE || imgEl.src;
+
+        // Set a new timer
+        hoverTimer = setTimeout(() => {
+            // Only show the modal if the mouse is still over the element (or if it immediately moved to the modal)
+            if (document.activeElement === imgEl || imgEl.matches(':hover')) {
+                imageModal.classList.add('visible');
+                imageModal.style.display = 'flex';
+            }
+        }, HOVER_DELAY_MS);
+    });
+
+    // Mouse Leave (clear delay AND close modal if it was open)
+    imgEl.addEventListener('mouseleave', () => {
+        // Clear the timer (prevents delayed opening)
+        clearTimeout(hoverTimer); 
+        
+        // Hide the modal immediately when leaving the small image, 
+        // UNLESS the mouse immediately entered the large modal image area.
+        // The modalContent.addEventListener('mouseleave', closeModal) handles the main closing mechanism now.
+        
+        // Check if the cursor moves directly from the small image to the large modal image.
+        // We use a small delay here to allow the mouse to bridge the gap if any, 
+        // but the main closing is now handled by modalContent:mouseleave.
+        setTimeout(() => {
+            // Check if the cursor is neither on the small image nor the large modal image
+            if (!imgEl.matches(':hover') && !modalContent.matches(':hover')) {
+                closeModal();
+            }
+        }, 50); // 50ms buffer
+    });
 }
 
-filterInput.addEventListener('input',()=>render());
+filterInput.addEventListener('input',()=>{ updateUI(); render(); });
 loadJSON();
 </script>
 </body>
