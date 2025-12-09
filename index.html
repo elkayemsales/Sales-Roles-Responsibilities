@@ -13,55 +13,57 @@
 <button id="sidebarToggleBtn">☰</button>
 
 <aside id="sidebar">
-  <input id="filterInput" type="search" placeholder="Search name, code, dept, customer...">
-  <button id="clearFilterBtn" disabled>Clear ALL filters</button>
-  
-  <div class="filter-block">
-    <div class="filter-header">
-      <h2>Filter by Customer (Multi-Select)</h2>
-      <button id="clearCustomerBtn" class="clear-individual-btn" disabled>❌</button>
-    </div>
-    <div id="customerFilters"></div>
-  </div>
-  
-  <div class="filter-block">
-    <div class="filter-header">
-      <h2>Filter by Role (Single-Select) </h2>
-      <button id="clearRoleBtn" class="clear-individual-btn" disabled>❌</button>
-    </div>
-    <div id="roleFilters"></div>
-  </div>
-  
-  <div class="filter-block">
-    <div class="filter-header">
-      <h2>Filter by Contribution (Multi-Select)</h2>
-      <button id="clearContribBtn" class="clear-individual-btn" disabled>❌</button>
-    </div>
-    <div id="contribFilters"></div>
-  </div>
+  <input id="filterInput" type="search" placeholder="Search name, code, dept, customer...">
+  <button id="clearFilterBtn" disabled>Clear ALL filters</button>
+  
+  <div class="filter-block">
+    <div class="filter-header">
+      <h2>Filter by Customer (Multi-Select)</h2>
+      <button id="clearCustomerBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
+    <div id="customerFilters"></div>
+  </div>
+  
+  <div class="filter-block">
+    <div class="filter-header">
+      <h2>Filter by Role (Single-Select) </h2>
+      <button id="clearRoleBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
+    <div id="roleFilters"></div>
+  </div>
+  
+  <div class="filter-block">
+    <div class="filter-header">
+      <h2>Filter by Contribution (Multi-Select)</h2>
+      <button id="clearContribBtn" class="clear-individual-btn" disabled>❌</button>
+    </div>
+    <div id="contribFilters"></div>
+  </div>
 </aside>
 
 <main id="main">
-  <h1>Sales Team Roles & Responsibilities</h1>
-  <div id="contentArea"></div>
+  <h1 id="titles">Sales Team Roles & Responsibilities</h1>
+  <div id="contentArea"></div>
 </main>
 
 <div id="imageModal">
-    <img id="modalContent" alt="Employee Photo">
+    <img id="modalContent" alt="Employee Photo">
 </div>
 
 <div id="pdfModal">
-    <div id="pdfContent">
-        <div id="pdfHeader">
-            <span id="pdfTitle">Roles & Responsibilities Document</span>
-            <button id="pdfCloseBtn">&times;</button>
-        </div>
-        <iframe id="pdfViewer" title="Document Viewer"></iframe>
-    </div>
+    <div id="pdfContent">
+        <div id="pdfHeader">
+            <span id="pdfTitle">Roles & Responsibilities Document</span>
+            <button id="pdfCloseBtn">&times;</button>
+        </div>
+        <iframe id="pdfViewer" title="Document Viewer"></iframe>
+    </div>
 </div>
 
+<button id="ogcFloatingBtn">ORGANIZATION CHART</button>
 <button id="backToTop">Top ↑</button>
 
 <script src="rr.js"></script>
+
 </body>
 </html>

@@ -408,4 +408,69 @@ document.addEventListener('DOMContentLoaded', ()=>{
 }); 
 
 filterInput.addEventListener('input',()=>{ updateUI(); render(); });
+
+/* *** START: JAVASCRIPT LOGIC FOR OGC BUTTON ***
+    (This should ideally be moved into your rr.js file)
+*/
+document.addEventListener('DOMContentLoaded', () => {
+    // Select the elements
+    const ogcBtn = document.getElementById('ogcFloatingBtn');
+    const pdfModal = document.getElementById('pdfModal');
+    const pdfViewer = document.getElementById('pdfViewer');
+    const pdfTitle = document.getElementById('pdfTitle');
+    const pdfCloseBtn = document.getElementById('pdfCloseBtn');
+    
+    // Function to close the modal (centralized function for reuse)
+    const closeModal = () => {
+        if (pdfModal && pdfViewer) {
+            pdfModal.style.display = 'none';
+            pdfViewer.src = ''; // Clear source to stop memory usage
+        }
+    };
+    
+    // Logic to handle opening the OGC PDF
+    if (ogcBtn && pdfModal && pdfViewer) {
+        ogcBtn.addEventListener('click', () => {
+            // 1. Set the source to the OGC file
+            pdfViewer.src = './OGC/OGC.pdf';
+            
+            // 2. Update the Title Bar 
+            if(pdfTitle) pdfTitle.textContent = "OGC Document";
+
+            // 3. Show the existing modal (using 'flex' to match typical modal centering)
+            pdfModal.style.display = 'flex'; 
+        });
+    }
+
+    // --- MOUSE/TOUCH-BASED CLOSING ---
+
+    // 1. Close modal using the 'x' button
+    if (pdfCloseBtn) {
+        pdfCloseBtn.addEventListener('click', closeModal);
+    }
+
+    // 2. Close modal when clicking the dark background (backdrop)
+    window.addEventListener('click', (event) => {
+        if (event.target === pdfModal) {
+            closeModal();
+        }
+    });
+    
+    // --- KEYBOARD-BASED CLOSING (NEW FEATURE) ---
+    
+    /**
+     * This logic handles closing the modal when the ESC key is pressed.
+     * This improves accessibility for keyboard users.
+     */
+    document.addEventListener('keydown', (event) => {
+        // Check if the modal is currently visible AND the key pressed is the Escape key
+        if (pdfModal.style.display === 'flex' && event.key === 'Escape') {
+            closeModal();
+        }
+    });
+
+    // NOTE: Your existing code in rr.js will likely handle other functionality (filters, basic/detailed view toggle, etc.)
+});
+/* *** END: JAVASCRIPT LOGIC FOR OGC BUTTON ***
+*/
 loadJSON();
