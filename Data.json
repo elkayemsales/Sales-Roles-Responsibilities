@@ -4630,12 +4630,12 @@
   },
   {
     "SINO": 24,
-    "EMPLOYEE_CODE": "OBS",
+    "EMPLOYEE_CODE": "2619",
     "EMPLOYEE_NAME": "T.VIGNESH",
     "SHORT_ROLES": "AD.OPE",
     "DEPARTMENT": "SALES",
     "ACTIIVITIES": "DISPATCH",
-    "EMPLOYEE_IMAGE": "./IMAGES/OBS.jpg",
+    "EMPLOYEE_IMAGE": "./IMAGES/2619.jpg",
     "ROLES": "AD.OPERATOR",
     "CUSTOMER": "TVS",
     "AUTHORITIES": [
@@ -4654,3 +4654,4 @@
     ]
   }
 ]
+
