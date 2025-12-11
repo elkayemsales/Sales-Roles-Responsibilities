@@ -207,3 +207,53 @@ h1 { font-size:1.8rem; margin-bottom:12px; color:#6b5e4a; }
     .employee-actions-top { margin-left: 0; margin-top: 10px; width: 100%; }
     .action-document-btn { flex-grow: 1; }
 }
+/* --- Fixed Controls (Styled Uniformly) --- */
+/* ... (viewToggleBtn and sidebarToggleBtn remain the same) ... */
+
+#ogcFloatingBtn {
+    position: fixed;
+    top: 16px; 
+    right: 200px; /* MODIFIED: Position moved slightly left to make room for SDF */
+    z-index: 1000; 
+    padding: 10px 15px;
+    background-color: #d9c6a2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#ogcFloatingBtn:hover { background-color: #b3a17a; }
+
+/* --- NEW SDF Floating Button Style --- */
+#sdfFloatingBtn {
+    position: fixed;
+    top: 16px; 
+    right: 400px; /* Positioned left of OGC button (~170px gap from OGC's right:200px) */
+    z-index: 1000; 
+    padding: 10px 15px;
+    background-color: #d9c6a2; /* Using the same style as other buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#sdfFloatingBtn:hover { background-color: #b3a17a; }
+/* --- END NEW SDF Floating Button Style --- */
+
+/* ... (backToTop and sidebar/main styles remain the same) ... */
+
+/* --- Media Queries (Mobile View Update) --- */
+@media (max-width: 768px) {
+/*     ... (other mobile styles remain the same) ... */
+    #ogcFloatingBtn { right: 120px; top: 8px; padding: 5px 10px; font-size: 0.8rem;}
+    #sdfFloatingBtn { right: 220px; top: 8px; padding: 5px 10px; font-size: 0.8rem;} /* Mobile position for SDF */
+/*     ... (other mobile styles remain the same) ... */
+}
