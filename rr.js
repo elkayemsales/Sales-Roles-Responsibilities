@@ -474,3 +474,16 @@ document.addEventListener('DOMContentLoaded', ()=>{
     closePdfModal(); 
     loadJSON(); // Start the advanced loading process
 });
+
+// Add this block inside your main DOMContentLoaded event listener in rr.js
+
+const sdfButton = document.getElementById('sdfFloatingBtn');
+// IMPORTANT: Replace 'https://elkayemsales.github.io/SALES-DEPT-FUNCTION/' with the actual link you want to open.
+const sdfLink = 'https://elkayemsales.github.io/SALES-DEPT-FUNCTION/'; 
+
+if (sdfButton) {
+    sdfButton.addEventListener('click', function() {
+        // Navigates the current window to the specified link
+        window.location.href = sdfLink; 
+    });
+}
